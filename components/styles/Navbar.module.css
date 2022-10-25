@@ -1,0 +1,17 @@
+.nav {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  list-style: none;
+}
+.nav > ul > li {
+  margin: 10px;
+  color: black;
+}

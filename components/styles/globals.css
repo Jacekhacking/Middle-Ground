@@ -21,6 +21,10 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: linear-gradient(
+      to right,
+      rgb(12, 12, 12) 50%,
+      rgb(252, 250, 250)
+    );
   }
 }
