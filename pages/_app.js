@@ -1,6 +1,8 @@
 import "../components/styles/globals.css";
 import Navbar from "../components/shared/Navbar";
 import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
+import BodyWrapper from "../components/shared/BodyWrapper";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
@@ -14,7 +16,10 @@ function MyApp({ Component, pageProps }) {
 
       <Navbar />
       <Header />
-      <Component {...pageProps} />
+      <BodyWrapper>
+        <Component {...pageProps} />
+      </BodyWrapper>
+      <Footer />
     </>
   );
 }

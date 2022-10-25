@@ -2,7 +2,7 @@ import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div className={styles.nav}>
+    <nav className={styles.nav}>
       <div>Logo</div>
       <ul>
         <li>Home</li>
@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>Training</li>
         <li>Blog</li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
