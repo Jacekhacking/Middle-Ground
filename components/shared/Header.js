@@ -8,8 +8,8 @@ const Header = () => {
       <Image
         src={HeaderTitle}
         alt="Middle Ground Treatment & Training"
-        height={500}
-        width={500}
+        height={550}
+        width={550}
       />
     </header>
   );

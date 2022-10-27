@@ -25,14 +25,14 @@ const Navbar = () => {
 
       <Link href="/">Home</Link>
 
-      <div className={styles.navbarMenuItem}>
+      <container className={styles.navbarMenuItem}>
         <Link href="/treatment">Treatment & Training</Link>
         <ul className={styles.navUl}>
           <li>Book Now</li>
           <li>Service Menu</li>
           <li>Daily Exercise</li>
         </ul>
-      </div>
+      </container>
       <div className={styles.navbarMenuItem}>
         <Link href="/about">About</Link>
         <ul className={styles.navUl}>
@@ -42,6 +42,7 @@ const Navbar = () => {
           <li>Tour</li>
         </ul>
       </div>
+
       <ul className={styles["nav-socials"]}>
         <li>fb</li>
         <li>inst</li>
