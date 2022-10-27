@@ -9,6 +9,7 @@
   justify-content: space-between;
   background-color: transparent;
   color: black;
+  transition: all 0.5s ease-in-out;
 }
 .nav-background-visible {
   background-color: rgb(208, 207, 207);
@@ -38,8 +39,8 @@
   justify-content: center;
   padding: 20px;
   /* font-size: 20px; */
-
   /* text-transform: uppercase; */
+  transition: all 0.3s ease-in-out;
 }
 .navUl {
   padding: 5px;
@@ -53,6 +54,11 @@
   top: 0;
   background-color: white;
   font-size: 1rem;
+  transition: visibility 500ms;
+  transition: all 0.2s ease-in-out;
+
+  /* transition: all 0.5s ease-in; */
+  /* transition: display 1s ease-in-out; */
 }
 
 .navbarMenuItem:hover {
@@ -64,6 +70,7 @@
 
 .navbarMenuItem:hover .navUl {
   display: block;
+  animation: fade-in 500ms forwards;
 }
 
 .nav-item:hover {
@@ -76,4 +83,13 @@
 
 .navUl:hover {
   box-shadow: 0 5px 10px black;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
