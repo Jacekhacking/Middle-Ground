@@ -7,15 +7,53 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  color: black;
 }
-.nav > ul {
+.nav-background-visible {
+  background-color: rgb(208, 207, 207);
+}
+.nav-socials {
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
   list-style: none;
+  text-decoration: none;
 }
 .nav > ul > li {
   margin: 10px;
   color: black;
+}
+.navbarMenuItem {
+  padding: 5px;
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.navUl {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.navbarMenuItem:hover {
+  cursor: pointer;
+}
+
+.navbarMenuItem:hover .navUl {
+  display: block;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.logo:hover {
+  cursor: pointer;
 }

@@ -19,7 +19,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Navbar />
-      <Header />
       <BodyWrapper>
         <Component {...pageProps} />
       </BodyWrapper>

@@ -1,14 +1,13 @@
 import styles from "../components/styles/Home.module.css";
+import Header from "../components/shared/Header";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <main>
-        HELLO WORLD
-        <div>testing</div>
+        <Header />
+        testing testing
       </main>
-
-      <footer></footer>
     </div>
   );
 }

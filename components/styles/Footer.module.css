@@ -1,0 +1,11 @@
+.footer-wrapper {
+  height: 5.5rem;
+  width: 100%;
+}
+.footer-section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid white;
+  margin: 0 55px;
+}
