@@ -3,7 +3,7 @@ import logo from "../../images/navbarLogo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { NavData } from "./NavData";
-import MenuItems from "./MenuItems";
+// import MenuItems from "./MenuItems";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -18,19 +18,34 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", changeNavBackground);
-    console.log(window.scrollY);
     return () => {
       window.removeEventListener("scroll", changeNavBackground);
     };
   }, []);
 
-  console.log(NavData[1].subMenu);
+  const NavItems = NavData;
+  console.log(NavItems);
   return (
     <nav
       className={`${styles.nav} ${
         navBackground ? styles["nav-background-visible"] : ""
       }`}
     >
+      {NavItems.map((item) => (
+        <div key={item.title} className={styles["navbar-menu-container"]}>
+          <Link href={item.url}>
+            {item.title}
+            {/* {item.subMenu[1]} */}
+          </Link>
+          <ul>
+            {item.subMenu.map((subUrl) => (
+              <Link href={subUrl.url} key={subUrl.title}>
+                <div>{subUrl.title} </div>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      ))}
       <Link href="/">
         <Image
           src={logo}
@@ -43,7 +58,7 @@ const Navbar = () => {
 
       {/* HTML/CSS for the map function  */}
 
-      <div className={styles.navbarMenuContainer}>
+      <div className={styles["navbar-menu-container"]}>
         <Link href={"/"}>
           <a> testing</a>
         </Link>
