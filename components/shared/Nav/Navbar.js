@@ -31,21 +31,6 @@ const Navbar = () => {
         navBackground ? styles["nav-background-visible"] : ""
       }`}
     >
-      {NavItems.map((item) => (
-        <div key={item.title} className={styles["navbar-menu-container"]}>
-          <Link href={item.url}>
-            {item.title}
-            {/* {item.subMenu[1]} */}
-          </Link>
-          <ul>
-            {item.subMenu.map((subUrl) => (
-              <Link href={subUrl.url} key={subUrl.title}>
-                <div>{subUrl.title} </div>
-              </Link>
-            ))}
-          </ul>
-        </div>
-      ))}
       <Link href="/">
         <Image
           src={logo}
@@ -56,18 +41,32 @@ const Navbar = () => {
         />
       </Link>
 
-      {/* HTML/CSS for the map function  */}
-
-      <div className={styles["navbar-menu-container"]}>
-        <Link href={"/"}>
-          <a> testing</a>
-        </Link>
-        <ul className={styles.navUl}>
-          <Link href={"/"} className={styles["nav-item"]}>
-            <div className={styles["nav-item"]}> testing</div>
-          </Link>
-        </ul>
-      </div>
+      {NavItems.map((item) =>
+        item.subMenu ? (
+          <div key={item.title} className={styles["navbar-menu-container"]}>
+            <Link href={item.url}>
+              <a>{item.title}</a>
+            </Link>
+            <ul className={styles["nav-ul"]}>
+              {item.subMenu.map((subUrl) => (
+                <Link
+                  href={subUrl.url}
+                  key={subUrl.title}
+                  className={styles["nav-item"]}
+                >
+                  <div className={styles["nav-item"]}>{subUrl.title} </div>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div key={item.title} className={styles["navbar-menu-container"]}>
+            <Link href={item.url}>
+              <a>{item.title}</a>
+            </Link>
+          </div>
+        )
+      )}
 
       <ul className={styles["nav-socials"]}>
         <li>fb</li>
