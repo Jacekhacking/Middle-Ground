@@ -1,5 +1,15 @@
 export const NavData = [
-  { title: "Home", url: "/" },
+  {
+    title: "Home",
+    url: "/",
+    subMenu: [
+      { title: "blog", url: "/blog" },
+      { title: "bio", url: "/bio" },
+      { title: "FAQ", url: "faq" },
+      { title: "tour", url: "tour" },
+      { title: "reviews", url: "review" },
+    ],
+  },
   {
     title: "Treatment & Training",
     url: "/treatment",
