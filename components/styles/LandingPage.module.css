@@ -2,12 +2,19 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 5%;
 }
 
 .welcome-section > h2 {
+  flex-grow: 3;
   font-size: 4rem;
+}
+.welcome-section > p {
+  /* max-width: 400px; */
+  flex-grow: 0.5;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .welcome-div-image-wrapper {

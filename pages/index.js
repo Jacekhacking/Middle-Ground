@@ -12,13 +12,14 @@ export default function Home() {
         <section className={`${styles["welcome-section"]}`}>
           <h2>HELLO WELCOME TO MY WEBSITE my name is alora</h2>
 
-          <div>
-            <Image src={welcomeImg} height={250} />
+          {/* <Image alt="photo of myself" src={welcomeImg} width={250} /> */}
+
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
             dolores repellat voluptates laborum reprehenderit iste molestias
             autem temporibus minus cumque assumenda sequi similique eos dicta
             laboriosam, dolorem vel recusandae?
-          </div>
+          </p>
         </section>
 
         <section className={`${styles["welcome-div-image-wrapper"]}`}>
