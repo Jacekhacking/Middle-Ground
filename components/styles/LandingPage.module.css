@@ -1,0 +1,54 @@
+.welcome-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.welcome-section > h2 {
+  font-size: 4rem;
+}
+
+.welcome-div-image-wrapper {
+  min-height: 75vh;
+  position: relative;
+}
+
+.overlap-1 {
+  background-image: url(../images/welcome-page-overlap1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  left: 45%;
+
+  top: 10%;
+}
+.overlap-2 {
+  background-image: url(../images/welcome-page-overlap2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  left: 15%;
+  z-index: -1;
+}
+
+.services-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 0 25%;
+}
+.services-section > * {
+  padding-top: 1rem;
+}
+
+.services-section > h3 {
+  font-size: 5rem;
+}
