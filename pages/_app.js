@@ -1,6 +1,6 @@
 import "../components/styles/globals.css";
 import Navbar from "../components/shared/Nav/Navbar";
-import Header from "../components/shared/Header";
+
 import Footer from "../components/shared/Footer";
 import BodyWrapper from "../components/shared/BodyWrapper";
 import Head from "next/head";
