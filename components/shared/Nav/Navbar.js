@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MenuItems from "./MenuItems";
-import Logo from "./Logo";
+
+import Link from "next/link";
 
 import styles from "../..//styles/Navbar.module.css";
 
@@ -15,6 +16,7 @@ const Navbar = () => {
         setNavBackground(false);
       }
     };
+
     window.addEventListener("scroll", changeNavBackground);
     return () => {
       window.removeEventListener("scroll", changeNavBackground);
@@ -27,7 +29,10 @@ const Navbar = () => {
         navBackground ? styles["nav-background-visible"] : ""
       }`}
     >
-      <Logo />
+      <Link href="/" legacyBehavior>
+        <div className={`${styles["logo"]}`}></div>
+      </Link>
+
       <MenuItems />
     </nav>
   );

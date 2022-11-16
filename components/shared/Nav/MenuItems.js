@@ -2,7 +2,7 @@ import Link from "next/link";
 import { NavData } from "./NavData";
 import styles from "../..//styles/Navbar.module.css";
 
-const MenuItems = ({ items }) => {
+const MenuItems = () => {
   const NavItems = NavData;
 
   return (
@@ -10,16 +10,10 @@ const MenuItems = ({ items }) => {
       {NavItems.map((item) =>
         item.subMenu ? (
           <div key={item.title} className={styles["navbar-menu-container"]}>
-            <Link href={item.url}>
-              <a>{item.title}</a>
-            </Link>
+            <Link href={item.url}>{item.title}</Link>
             <ul className={styles["nav-ul"]}>
               {item.subMenu.map((subUrl) => (
-                <Link
-                  href={subUrl.url}
-                  key={subUrl.title}
-                  className={styles["nav-item"]}
-                >
+                <Link href={subUrl.url} key={subUrl.title}>
                   <div className={styles["nav-item"]}>{subUrl.title} </div>
                 </Link>
               ))}
@@ -27,9 +21,7 @@ const MenuItems = ({ items }) => {
           </div>
         ) : (
           <div key={item.title} className={styles["navbar-menu-container"]}>
-            <Link href={item.url}>
-              <a>{item.title}</a>
-            </Link>
+            <Link href={item.url}>{item.title}</Link>
           </div>
         )
       )}

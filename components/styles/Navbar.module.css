@@ -3,7 +3,6 @@
   top: 0;
   width: 100%;
   z-index: 2;
-  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,9 +89,17 @@
   color: white;
   background-color: black;
 }
+.logo {
+  background-image: url("../images/navbarLogo.png");
+  background-position: center;
+  background-size: contain;
+  height: 70px;
+  width: 70px;
+}
 
 .logo:hover {
   cursor: pointer;
+  background-image: url("../images/invertedNavbarLogo.png");
 }
 
 @keyframes fade-in {

@@ -15,7 +15,7 @@ const Logo = () => {
   return (
     <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseExit}>
       <Link href="/">
-        {isHovering ? (
+        {/* {isHovering ? (
           <Image
             src={invertLogo}
             alt="logo"
@@ -31,7 +31,9 @@ const Logo = () => {
             height="100"
             className={styles.logo}
           />
-        )}
+        )} */}
+
+        <Image src={invertLogo} alt="logo" width="100" height="100" />
       </Link>
     </div>
   );
