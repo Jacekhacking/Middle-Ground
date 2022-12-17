@@ -1,20 +1,27 @@
 .welcome-section {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 5% 0%;
 }
 
 .welcome-section > h2 {
-  flex-grow: 3;
-  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  font-size: 5rem;
+  text-align: center;
+  padding: 5% 15%;
 }
 .welcome-section > p {
-  /* max-width: 400px; */
-  flex-grow: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  /* background-color: blue; */
   font-size: 1.5rem;
+  padding: 5% 1rem;
 }
 
 .welcome-div-image-wrapper {

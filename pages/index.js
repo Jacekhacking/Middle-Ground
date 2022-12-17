@@ -1,5 +1,5 @@
 import styles from "../components/styles/LandingPage.module.css";
-import Header from "../components/home/Header";
+import Hero from "../components/home/Hero";
 import Image from "next/image";
 import welcomeImg from "../components/images/welcome-page-tiny.JPG";
 
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main>
-        <Header />
+        <Hero />
 
         <section className={`${styles["welcome-section"]}`}>
           <h2>WE PROVIDE TREATMENT AND TRAINING FOR EVERYONE</h2>

@@ -2,7 +2,7 @@ import styles from "../styles/Header.module.css";
 import HeaderTitle from "../images/HeaderTitle.png";
 import Image from "next/image";
 
-const Header = () => {
+const Hero = () => {
   return (
     <header className={styles.header}>
       <div className={`${styles["header-transparent-bg"]}`}>
@@ -13,8 +13,9 @@ const Header = () => {
           width={550}
         />
       </div>
+      <button className={`${styles["booking-button"]}`}>BOOK NOW</button>
     </header>
   );
 };
 
-export default Header;
+export default Hero;
