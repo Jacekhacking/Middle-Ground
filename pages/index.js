@@ -26,7 +26,7 @@ export default function Home() {
           <div className={`${styles["overlap-2"]}`}></div>
         </section>
 
-        <section className={`${styles["services-section"]}`}>
+        <section className={`${styles["services-section-wrapper"]}`}>
           <h2>SERVICES</h2>
           <p>
             Here is a list of the modalities & services offered with Middle
@@ -35,7 +35,7 @@ export default function Home() {
             client. Depending on where you are along the spectrum of treatment &
             training. Book a treatment or a training session.{" "}
           </p>
-          <div className="" style={{ display: "flex" }}>
+          <div className={`${styles["services-section-ul-div"]}`}>
             <ul>
               <h3>TRAINING</h3>
               <li>Strength Training</li>
