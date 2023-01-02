@@ -1,9 +1,9 @@
-const bio = () => {
+const about = () => {
   return (
     <>
-      <div>hello from the Bio Page</div>
+      <div>hello from the about Page</div>
     </>
   );
 };
 
-export default bio;
+export default about;
