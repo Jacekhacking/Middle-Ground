@@ -1,26 +1,23 @@
 export const NavData = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
     title: "Treatment & Training",
-    url: "/treatment",
+    url: "/services",
     subMenu: [
-      { title: "blog", url: "/blog" },
-      { title: "bio", url: "/bio" },
+      { title: "Book Now", url: "/booking" },
+      { title: "Services", url: "/services" },
       { title: "FAQ", url: "faq" },
-      { title: "tour", url: "tour" },
-      { title: "reviews", url: "review" },
+      { title: "Reviews", url: "review" },
+      // { title: "daily exercise", url: "/exercises" },
     ],
   },
   {
     title: "About",
     url: "/about",
     subMenu: [
-      { title: "Book Now", url: "/booking" },
-      { title: "services", url: "services" },
-      { title: "daily exercise", url: "/exercises" },
+      { title: "Meet Alora", url: "/about" },
+      { title: "Take a Tour", url: "tour" },
+      // { title: "blog", url: "/blog" },
+      // { title: "Newsletter", url: "/blog" },
     ],
   },
 ];

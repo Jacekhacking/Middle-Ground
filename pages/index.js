@@ -5,20 +5,18 @@ import welcomeImg from "../components/images/welcome-page-tiny.JPG";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main>
+    <>
+      <main style={{ paddingTop: "-5rem" }}>
         <Hero />
 
         <section className={`${styles["welcome-section"]}`}>
-          <h2>WE PROVIDE TREATMENT AND TRAINING FOR EVERYONE</h2>
-          <p>
-            Middle Ground is part of a health collective that in motivated help
-            yo find your middle ground amidst the various treatment & training
-            paths in the world. We offer bodywork modalities & personal training
-            to help you be your best self, feel good for a lifetime, and build
-            trust within your own body. Book a section to learn the most.
-            Explore the website to learn more.
-          </p>
+          <h2>FIND YOUR MIDDLE GROUND</h2>
+          <ul>
+            <li>Exploration & gaining awareness of your body</li>
+            <li>Assessment & tracking your progress</li>
+            <li>Empowerment & educating every client</li>
+            <li>Consistency & movement longevity </li>
+          </ul>
         </section>
 
         <section className={`${styles["welcome-div-image-wrapper"]}`}>
@@ -37,12 +35,6 @@ export default function Home() {
           </p>
           <div className={`${styles["services-section-ul-div"]}`}>
             <ul>
-              <h3>TRAINING</h3>
-              <li>Strength Training</li>
-              <li>FRC Training</li>
-              <li>Corrective Exercise</li>
-            </ul>
-            <ul>
               <h3>TREATMENT</h3>
               <li>Massage Therapy</li>
               <li>Assisted Stretching</li>
@@ -51,10 +43,16 @@ export default function Home() {
               <li>Lymphatic Drainage</li>
               <li>Deep Tissue</li>
             </ul>
+            <ul>
+              <h3>TRAINING</h3>
+              <li>Strength Training</li>
+              <li>FRC Training</li>
+              <li>Corrective Exercise</li>
+            </ul>
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }
 // testing for other branch
