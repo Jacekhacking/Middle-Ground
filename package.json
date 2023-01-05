@@ -12,6 +12,7 @@
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-social-media-embed": "^2.2.13",
     "sharp": "^0.31.2"
   },
   "devDependencies": {
