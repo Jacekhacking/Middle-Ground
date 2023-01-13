@@ -11,6 +11,7 @@ const Hero = () => {
           alt="Middle Ground Treatment & Training"
           height={550}
           width={550}
+          priority
         />
       </div>
       <button className={`${styles["booking-button"]}`}>BOOK NOW</button>

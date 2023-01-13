@@ -7,21 +7,21 @@ const MenuItems = () => {
 
   return (
     <>
-      {NavItems.map((item) =>
-        item.subMenu ? (
-          <div key={item.title} className={styles["navbar-menu-container"]}>
-            <Link href={item.url}>{item.title}</Link>
+      {NavItems.map(({ subMenu, url, title }) =>
+        subMenu ? (
+          <div key={title} className={styles["navbar-menu-container"]}>
+            <Link href={url}>{title}</Link>
             <ul className={styles["nav-ul"]}>
-              {item.subMenu.map((subUrl) => (
-                <Link href={subUrl.url} key={subUrl.title}>
-                  <div className={styles["nav-item"]}>{subUrl.title} </div>
+              {subMenu.map(({ url, title }) => (
+                <Link href={url} key={title}>
+                  <div className={styles["nav-item"]}>{title} </div>
                 </Link>
               ))}
             </ul>
           </div>
         ) : (
-          <div key={item.title} className={styles["navbar-menu-container"]}>
-            <Link href={item.url}>{item.title}</Link>
+          <div key={title} className={styles["navbar-menu-container"]}>
+            <Link href={url}>{title}</Link>
           </div>
         )
       )}

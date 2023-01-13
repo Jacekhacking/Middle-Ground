@@ -1,5 +1,5 @@
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -101,7 +101,6 @@
 
 .logo:hover {
   cursor: pointer;
-  background-image: url("../images/invertedNavbarLogo.png");
 }
 
 @keyframes fade-in {
