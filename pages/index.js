@@ -2,6 +2,7 @@ import styles from "../components/styles/LandingPage.module.css";
 import Hero from "../components/home/Hero";
 import Image from "next/image";
 import welcomeImg from "../components/images/welcome-page-tiny.JPG";
+import Instagram from "../components/home/Instagram";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        <Instagram />
       </main>
     </>
   );
