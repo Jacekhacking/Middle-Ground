@@ -1,9 +1,7 @@
-import styles from "../styles/Footer.module.css";
-
 const Footer = () => {
   return (
-    <footer className={styles["footer-wrapper"]}>
-      <section className={styles["footer-section-1"]}>
+    <footer className="h-20 w-screen ">
+      <section className="flex items-center justify-evenly border-t-2 border-white py-5 mx-10">
         <div>
           <h1>SUPPORT</h1>
           <ul>

@@ -6,7 +6,7 @@ export const NavData = [
       { title: "Book Now", url: "/booking" },
       { title: "Services", url: "/services" },
       { title: "FAQ", url: "faq" },
-      { title: "Reviews", url: "review" },
+      { title: "Reviews", url: "reviews" },
       // { title: "daily exercise", url: "/exercises" },
     ],
   },

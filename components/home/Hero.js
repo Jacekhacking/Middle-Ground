@@ -14,7 +14,9 @@ const Hero = () => {
           priority
         />
       </div>
-      <button className={`${styles["booking-button"]}`}>BOOK NOW</button>
+      <button className=" custom-box-shadow text-xl bg-white text-black absolute bottom-1.5 right-12 w-32 h-12 hover:bg-black hover:text-white">
+        Book Now
+      </button>
     </header>
   );
 };
