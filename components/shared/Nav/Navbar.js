@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import MenuItems from "./MenuItems";
-
 import Link from "next/link";
-
-import styles from "../..//styles/Navbar.module.css";
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -25,12 +22,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles["nav"]} ${
-        navBackground ? styles["nav-background-visible"] : ""
+      className={`sticky top-0 w-screen z-10 flex justify-between transition-all text-black ${
+        navBackground ? "bg-gray-200" : "bg-white"
       }`}
     >
       <Link href="/" legacyBehavior>
-        <div className={`${styles["logo"]}`}></div>
+        <div className="nav-logo bg-contain bg-no-repeat hover:cursor-pointer"></div>
       </Link>
 
       <MenuItems />

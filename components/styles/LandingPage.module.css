@@ -37,7 +37,7 @@
 /* Landing page styled images overlapping on purpose!  */
 
 .overlap-1 {
-  background-image: url(../images/welcome-page-overlap1.jpg);
+  background-image: url(../../images/welcome-page-overlap1.jpg);
   background-size: cover;
   background-position: center;
   grid-column: 2/5;
@@ -45,7 +45,7 @@
   z-index: -1;
 }
 .overlap-2 {
-  background-image: url(../images/welcome-page-overlap2.jpg);
+  background-image: url(../../images/welcome-page-overlap2.jpg);
   background-size: cover;
   background-position: center;
   grid-column: 4/7;

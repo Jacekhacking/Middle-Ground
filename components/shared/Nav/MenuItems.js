@@ -26,7 +26,7 @@ const MenuItems = () => {
         )
       )}
 
-      <ul className={styles["nav-socials"]}>
+      <ul className="text-black flex justify-between items-center mr-3 p-2 border border-transparent hover:border-black hover:cursor-pointer hover:bg-white custom-box-shadow-hover">
         <li>fb</li>
         <li>inst</li>
         <li>fb</li>
