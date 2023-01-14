@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        logo: "url(/images/navbarLogo.png)",
+      },
+    },
   },
   plugins: [],
 };

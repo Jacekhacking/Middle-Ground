@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-box-shadow {
-  box-shadow: 0 5px 10px black;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
@@ -68,4 +64,18 @@ a {
     color: white;
     background: rgb(12, 12, 12) 30%;
   }
+}
+
+.custom-box-shadow {
+  box-shadow: 0 5px 10px black;
+}
+
+.custom-box-shadow-hover:hover {
+  box-shadow: 0 5px 10px black;
+}
+
+.nav-logo {
+  background-image: url("../../images/navbarLogo.png");
+  height: 70px;
+  width: 70px;
 }
