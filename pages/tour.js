@@ -1,9 +1,9 @@
-import React from "react";
-
-const reviews = () => {
+const Tour = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <h2 className=" text-black text-5xl font-bold underline ">reviews!</h2>
+      <h2 className=" text-black text-5xl font-bold underline ">
+        Tour The Space!
+      </h2>
       <p className="mt-20 text-black text-center text-2xl max-w-5xl">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
         provident libero, perferendis facilis, id laudantium, aspernatur dicta
@@ -17,4 +17,4 @@ const reviews = () => {
   );
 };
 
-export default reviews;
+export default Tour;
