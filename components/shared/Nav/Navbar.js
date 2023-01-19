@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 w-screen z-10 flex justify-between transition-all text-black ${
-        navBackground ? "bg-gray-200" : "bg-white"
+        navBackground ? "bg-gray-200" : "bg-gray-100"
       }`}
     >
       <Link href="/" legacyBehavior>
