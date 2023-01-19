@@ -1,16 +1,23 @@
+import Image from "next/image";
+import AboutImage from "../images/welcome-page-tiny.JPG";
+
 const about = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <h2 className=" text-black text-5xl font-bold underline ">About!</h2>
-      <p className="mt-20 text-black text-center text-2xl max-w-5xl">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+      <Image
+        src={AboutImage}
+        alt="Alora"
+        height={700}
+        width={700}
+        className="shadow-2xl rounded-md "
+      />
+
+      <p className="mt-20 text-black text-center text-3xl max-w-4xl">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
         provident libero, perferendis facilis, id laudantium, aspernatur dicta
         quaerat ratione quia voluptates recusandae. Sit molestias eius aut. Quis
         fuga commodi magni?
       </p>
-      <button className="mt-20 custom-box-shadow text-xl bg-white text-black  w-32 h-12 hover:bg-black hover:text-white">
-        <a href="">Book Now</a>
-      </button>
     </div>
   );
 };

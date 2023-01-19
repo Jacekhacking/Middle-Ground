@@ -25,7 +25,9 @@ export default function Home() {
           <div className={`${styles["overlap-2"]}`}></div>
         </section>
 
-        <section className={`${styles["services-section-wrapper"]}`}>
+        <section
+          className={`${styles["services-section-wrapper"]} bg-gray-100 text-black`}
+        >
           <h2>SERVICES</h2>
           <p>
             Here is a list of the modalities & services offered with Middle
