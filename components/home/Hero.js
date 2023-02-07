@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} h-screen`}>
       <div className={`${styles["header-transparent-bg"]}`}>
         <Image
           src={HeaderTitle}

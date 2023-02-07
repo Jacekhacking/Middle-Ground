@@ -1,4 +1,6 @@
-const booking = () => {
+import React from "react";
+
+const Booking = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center">
       <h2 className=" text-black text-5xl font-bold underline ">Booking!</h2>
@@ -15,4 +17,4 @@ const booking = () => {
   );
 };
 
-export default booking;
+export default Booking;
