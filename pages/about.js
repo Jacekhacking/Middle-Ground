@@ -3,7 +3,7 @@ import AboutImage from "../images/welcome-page-tiny.JPG";
 
 const about = () => {
   return (
-    <div className="h-screen bg-gray-100 flex flex-col items-center justify-center font-serif">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center font-serif">
       <h2 className="text-black text-5xl pb-20">Meet Alora</h2>
       <Image
         src={AboutImage}

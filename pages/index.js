@@ -7,10 +7,12 @@ import Instagram from "../components/home/Instagram";
 export default function Home() {
   return (
     <>
-      <main style={{ paddingTop: "-5rem" }}>
+      <main>
         <Hero />
         <section className="grid grid-cols-4 grid-rows-4 gap-2">
-          <h2 className="col-start-1 col-end-3 row-start-3 text-5xl flex justify-center" >FIND YOUR MIDDLE GROUND</h2>
+          <h2 className="col-start-1 col-end-3 row-start-3 text-5xl flex justify-center">
+            FIND YOUR MIDDLE GROUND
+          </h2>
           <ul className=" col-start-3 col-end-5 row-start-3 text-2xl flex justify-center flex-col">
             <li>Exploration & gaining awareness of your body</li>
             <li>Assessment & tracking your progress</li>

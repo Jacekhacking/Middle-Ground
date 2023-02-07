@@ -1,7 +1,9 @@
-const Footer = () => {
+const Footer = ({ backgroundColor = "white", secondaryColor = "black" }) => {
   return (
-    <footer className="h-20 w-screen bg-white ">
-      <section className=" text-black flex items-center pt-2 justify-evenly border-t-2  border-black">
+    <footer className={`h-20 w-full bg-${backgroundColor} `}>
+      <section
+        className={` text-${secondaryColor} flex items-center pt-2 justify-evenly border-t-2  border-${secondaryColor}`}
+      >
         <div>
           <h1>SUPPORT</h1>
           <ul>

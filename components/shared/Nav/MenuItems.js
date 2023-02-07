@@ -9,9 +9,12 @@ const MenuItems = () => {
     <>
       {NavItems.map(({ subMenu, url, title }) =>
         subMenu ? (
-          <div key={title} className={styles["navbar-menu-container"]}>
+          <div
+            key={title}
+            className=" bg-inherit group border border-transparent text-black relative flex items-center justify-center min-h-10 min-w-20 transition-all ease-in-out hover:border-black custom-box-shadow-hover px-10 my-2"
+          >
             <Link href={url}>{title}</Link>
-            <ul className={styles["nav-ul"]}>
+            <ul className="mt-10 left-50 top-2 absolute hidden group-hover:block border border-black bg-inherit custom-box-shadow-hover">
               {subMenu.map(({ url, title }) => (
                 <Link href={url} key={title}>
                   <div className={styles["nav-item"]}>{title} </div>
@@ -26,7 +29,7 @@ const MenuItems = () => {
         )
       )}
 
-      <ul className="text-black flex justify-between items-center mr-3 p-2 border border-transparent hover:border-black hover:cursor-pointer hover:bg-white custom-box-shadow-hover">
+      <ul className="text-black flex justify-between items-center mr-3 p-2 border border-transparent hover:border-black hover:cursor-pointer custom-box-shadow-hover my-2">
         <li>fb</li>
         <li>inst</li>
         <li>fb</li>

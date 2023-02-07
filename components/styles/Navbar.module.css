@@ -31,7 +31,7 @@
   background-color: white;
   box-shadow: 0 5px 10px black;
 } */
-.navbar-menu-container {
+/* .navbar-menu-container {
   border: 1px solid transparent;
   color: black;
   position: relative;
@@ -47,7 +47,7 @@
   border: 1px solid black;
   background-color: white;
   box-shadow: 0 5px 10px black;
-}
+} */
 
 .navbar-menu-container:hover .nav-ul {
   display: block;
