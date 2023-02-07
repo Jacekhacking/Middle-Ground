@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 w-screen z-10 flex justify-between transition-all text-black ${
+      className={`sticky top-0 w-screen z-10 flex justify-between transition-all text-black px-5 ${
         navBackground ? "bg-gray-200" : "bg-gray-100"
       }`}
     >

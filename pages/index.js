@@ -9,10 +9,9 @@ export default function Home() {
     <>
       <main style={{ paddingTop: "-5rem" }}>
         <Hero />
-
-        <section className={`${styles["welcome-section"]}`}>
-          <h2>FIND YOUR MIDDLE GROUND</h2>
-          <ul>
+        <section className="grid grid-cols-4 grid-rows-4 gap-2">
+          <h2 className="col-start-1 col-end-3 row-start-3 text-5xl flex justify-center" >FIND YOUR MIDDLE GROUND</h2>
+          <ul className=" col-start-3 col-end-5 row-start-3 text-2xl flex justify-center flex-col">
             <li>Exploration & gaining awareness of your body</li>
             <li>Assessment & tracking your progress</li>
             <li>Empowerment & educating every client</li>
@@ -21,7 +20,7 @@ export default function Home() {
         </section>
 
         <section className={`${styles["welcome-div-image-wrapper"]}`}>
-          <div className={`${styles["overlap-1"]}`}></div>
+          <div className={`${styles["overlap-1"]} bg-black`}></div>
           <div className={`${styles["overlap-2"]}`}></div>
         </section>
 
@@ -34,7 +33,7 @@ export default function Home() {
             Ground we like to take a comprehensive view of the body because we
             believe that you deserve it all. Each session is customized to each
             client. Depending on where you are along the spectrum of treatment &
-            training. Book a treatment or a training session.{" "}
+            training. Book a treatment or a training session.
           </p>
           <div className={`${styles["services-section-ul-div"]}`}>
             <ul>
