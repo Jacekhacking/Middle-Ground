@@ -1,5 +1,5 @@
-import Image from "next/image";
-import AboutImage from "../../public/images/welcome-page-tiny.JPG";
+import Image from 'next/image'
+import AboutImage from '../../public/images/welcome-page-tiny.JPG'
 
 const about = () => {
   return (
@@ -7,20 +7,20 @@ const about = () => {
       <h2 className="text-black text-5xl pb-20">Meet Alora</h2>
       <Image
         src={AboutImage}
-        alt="Alora"
+        alt="Alora Bonner"
         height={700}
         width={700}
         className="shadow-2xl rounded-md "
       />
 
-      <p className="mt-20 text-black text-center text-3xl max-w-4xl">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+      <p className="mt-20 text-black text-center text-3xl max-w-4xl ">
+        Lorem ipsum d olor sit amet consectetur, adipisicing elit. Architecto
         provident libero, perferendis facilis, id laudantium, aspernatur dicta
         quaerat ratione quia voluptates recusandae. Sit molestias eius aut. Quis
         fuga commodi magni?
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default about;
+export default about

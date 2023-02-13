@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "nav-logo": "url('./public/images/navbarLogo.png')",
-        'hero-img' : "url('/public/images/Header2.png')"
+        "hero-img": "url('/public/images/Header2.png')",
       },
     },
   },

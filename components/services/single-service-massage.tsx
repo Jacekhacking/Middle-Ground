@@ -2,24 +2,24 @@ import {useRef} from 'react'
 
 import {FormSubmitButton, MGButton} from '../UI/button'
 
-const ServiceMembershipItem = ({
-                                   membershipsArray,
-                                   handleMemberShipArrayChange,
-                               }) => {
+const SingleServiceMassageComponent = ({
+                                           sessionArray,
+                                           handleSessionChange,
+                                       }) => {
     const {id, cost, sessions_per_month, session_length, description} =
-        membershipsArray[0]
+        sessionArray[0]
 
     const formRef = useRef<HTMLSelectElement>(null)
 
     const handleFormSubmit = (e: any) => {
         e.preventDefault()
         const sessionLength = Number(formRef.current.value)
-        handleMemberShipArrayChange(sessionLength)
+        handleSessionChange(sessionLength)
     }
-    console.log('testing reform ')
+
     return (
         <>
-            <h3 className="text-black ">Membership Options</h3>
+            <h3 className="text-black text-4xl testing test ">Single Session Options</h3>
             <div
                 className=" w-full flex justify-center items-center px-7 py-2 text-black"
                 key={id}
@@ -61,7 +61,7 @@ const ServiceMembershipItem = ({
                         </form>
                     </div>
 
-                    <p className="text-center text-lg"> {description}</p>
+                    <p className="text-center text-lg">{description}</p>
                 </div>
             </div>
             <div className=" w-10/12 min-h-[2px] bg-black my-4 "></div>
@@ -69,4 +69,4 @@ const ServiceMembershipItem = ({
     )
 }
 
-export default ServiceMembershipItem
+export default SingleServiceMassageComponent
