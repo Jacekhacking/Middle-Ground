@@ -1,11 +1,11 @@
-import styles from "../styles/Header.module.css";
-import HeaderTitle from "../../images/HeaderTitle.png";
+import styles from "../../styles/Header.module.css";
+import HeaderTitle from "../../public/images/HeaderTitle.png";
 import Image from "next/image";
 
 const Hero = () => {
   return (
     <header className={`${styles.header} h-screen py-minusNav `}>
-      <div className={`${styles["header-transparent-bg"]}`}>
+      <div className="flex items-center justify-center">
         <Image
           src={HeaderTitle}
           alt="Middle Ground Treatment & Training"

@@ -1,8 +1,8 @@
-import styles from "../components/styles/LandingPage.module.css";
+import styles from "../styles/LandingPage.module.css";
 import Hero from "../components/home/Hero";
 import Image from "next/image";
-import welcomeImg from "../images/welcome-page-tiny.JPG";
-import Instagram from "../components/home/Instagram";
+import welcomeImg from "../public/images/welcome-page-tiny.JPG";
+// import Instagram from "../components/home/Instagram";
 
 export default function Home() {
   return (
@@ -55,7 +55,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <Instagram />
+        {/*<Instagram />*/}
       </main>
     </>
   );

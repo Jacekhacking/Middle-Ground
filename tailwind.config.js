@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        logo: "url(/images/navbarLogo.png)",
+        "nav-logo": "url('./public/images/navbarLogo.png')",
+        'hero-img' : "url('/public/images/Header2.png')"
       },
     },
   },

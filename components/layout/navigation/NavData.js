@@ -1,10 +1,10 @@
 export const NavData = [
   {
     title: "Treatment & Training ",
-    url: "/services",
+    url: "/treatment-training",
     subMenu: [
-      { title: "Book A Session", url: "/booking" },
-      { title: "Services", url: "/services" },
+      { title: "Book A Session", url: "/treatment-training/booking" },
+      { title: "Services", url: "/treatment-training/services" },
       // { title: "daily exercise", url: "/exercises" },
     ],
   },
@@ -13,9 +13,9 @@ export const NavData = [
     url: "/about",
     subMenu: [
       { title: "Meet Alora", url: "/about" },
-      { title: "Take a Tour", url: "tour" },
-      { title: "FAQ", url: "faq" },
-      { title: "Reviews", url: "reviews" },
+      { title: "Take a Tour", url: "/about/tour" },
+      { title: "FAQ", url: "/about/faq" },
+      { title: "Reviews", url: "/about/reviews" },
       // { title: "blog", url: "/blog" },
       // { title: "Newsletter", url: "/blog" },
     ],

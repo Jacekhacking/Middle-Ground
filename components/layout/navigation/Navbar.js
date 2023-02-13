@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MenuItems from "./MenuItems";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -29,8 +30,14 @@ const Navbar = () => {
           navBackground ? "bg-gray-200" : "bg-gray-100"
         } `}
       >
-        <Link href="/" legacyBehavior>
-          <div className="nav-logo bg-contain bg-no-repeat hover:cursor-pointer my-2"></div>
+        <Link href="/">
+          <Image
+            source={"images/navbarLogo.png"}
+            alt="logo"
+            className="h-20 w-20 bg-red-400"
+          />
+
+          <div className=" bg-contain bg-no-repeat hover:cursor-pointer my-2"></div>
         </Link>
         <MenuItems />
       </div>
