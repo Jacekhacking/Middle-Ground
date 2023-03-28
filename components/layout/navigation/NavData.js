@@ -12,7 +12,7 @@ export const NavData = [
     title: "About",
     url: "/about",
     subMenu: [
-      { title: "Meet Alora", url: "/about" },
+      { title: "Meet Alora", url: "/about/founder" },
       { title: "Take a Tour", url: "/about/tour" },
       { title: "FAQ", url: "/about/faq" },
       { title: "Reviews", url: "/about/reviews" },

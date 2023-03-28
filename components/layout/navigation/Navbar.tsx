@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MenuItems from "./MenuItems";
+import MenuItems from "./NavItems";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -23,18 +23,20 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 w-full z-10 block transition-all text-black h-20 `}
+      className={`hidden md:block top-0 w-full z-10 fixed transition-all ease-in-out text-black h-20 `}
     >
       <div
-        className={`flex justify-between transition-all text-black px-5 ${
+        className={`flex justify-between transition-all ease-in-out text-black px-5 ${
           navBackground ? "bg-gray-200" : "bg-gray-100"
         } `}
       >
         <Link href="/">
           <Image
-            source={"images/navbarLogo.png"}
+            src={"/images/navbarLogo.png"}
+            width={100}
+            height={100}
             alt="logo"
-            className="h-20 w-20 bg-red-400"
+            // className="h-20 w-20 bg-red-400"
           />
 
           <div className=" bg-contain bg-no-repeat hover:cursor-pointer my-2"></div>
