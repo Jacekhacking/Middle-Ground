@@ -1,8 +1,10 @@
-const Footer = ({ backgroundColor = "white", secondaryColor = "black" }) => {
+import { useEffect, useState } from "react";
+
+const Footer = () => {
   return (
-    <footer className={`h-20 w-full bg-${backgroundColor} `}>
+    <footer className={`h-20 w-full bg-white `}>
       <section
-        className={` text-${secondaryColor} flex items-center pt-2 justify-evenly border-t-2  border-${secondaryColor}`}
+        className={` text-black flex items-center pt-2 justify-evenly border-t-2  border-black`}
       >
         <div>
           <h1>SUPPORT</h1>
@@ -15,7 +17,7 @@ const Footer = ({ backgroundColor = "white", secondaryColor = "black" }) => {
         <div>
           <h1>CONTACT</h1>
           <ul>
-            <a href="#">Email</a>
+            <a href="components/shared#">Email</a>
             <p>555-555-5555</p>
           </ul>
         </div>
