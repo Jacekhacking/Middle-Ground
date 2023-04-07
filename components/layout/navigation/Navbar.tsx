@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       <div
         className={`flex items-center justify-between transition-all ease-in-out text-black px-5 ${
-          navBackground ? "bg-gray-200" : "bg-gray-100"
+          navBackground ? "bg-zinc-300" : "bg-zinc-200"
         } `}
       >
         <div className="w-14 h-14 relative">

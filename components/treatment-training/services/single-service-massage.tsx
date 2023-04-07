@@ -46,6 +46,7 @@ const SingleServiceMassageComponent = ({
               <select
                 onChange={(e) => handleSessionChange(Number(e.target.value))}
                 name=""
+                value={session_length}
                 id="session-length"
                 className="bg-white border-2 border-black mx-2"
               >

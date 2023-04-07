@@ -1,11 +1,23 @@
 import styles from "../../styles/Header.module.css";
 import HeaderTitle from "../../public/images/HeaderTitle.png";
+import Header from "../../public/images/Header-bg.png";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <header className={`${styles.header} h-screen py-minusNav `}>
-      <div className="flex items-center justify-center">
+    <header
+      className={`relative items-center justify-center h-screen py-minusNav `}
+    >
+      <div className="h-full w-full ">
+        <Image
+          src={Header}
+          fill={true}
+          className="object-cover"
+          alt="Alora holding a workout band."
+        />
+      </div>
+
+      <div className="flex absolute inset-x-0 top-0 right-25 items-center justify-center ">
         <Image
           src={HeaderTitle}
           alt="Middle Ground Treatment & Training"
@@ -14,7 +26,7 @@ const Hero = () => {
           priority
         />
       </div>
-      <button className=" custom-box-shadow text-xl bg-white text-black absolute bottom-5 right-12 w-32 h-12 hover:bg-black hover:text-white">
+      <button className=" custom-box-shadow text-xl bg-white text-black absolute bottom-14 right-12 w-32 h-12 hover:bg-black hover:text-white">
         Book Now
       </button>
     </header>

@@ -48,6 +48,7 @@ const ServiceMembershipItem = ({
                 name=""
                 id="session-length"
                 className="bg-white border-2 border-gray-500 ml-4 "
+                value={session_length}
                 onChange={(e) =>
                   handleMemberShipArrayChange(Number(e.target.value))
                 }
