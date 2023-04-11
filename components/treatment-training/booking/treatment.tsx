@@ -10,7 +10,7 @@ type SingleServiceMassageComponent = {
   handleSessionChange: any;
 };
 
-const SingleServiceMassageComponent = ({
+const TreatmentComponent = ({
   sessionArray,
   handleSessionChange,
 }: SingleServiceMassageComponent) => {
@@ -32,9 +32,12 @@ const SingleServiceMassageComponent = ({
           </h3>
           <p className="text-2xl">{session_length} minute sessions</p>
 
-          {/* <MGButton thirdPartyLink="https://www.vagaro.com/middleground/memberships">
+          <MGButton
+            size={"small"}
+            thirdPartyLink="https://www.vagaro.com/middleground/memberships"
+          >
             Sign Up
-          </MGButton> */}
+          </MGButton>
         </div>
 
         <div className="text-black w-5/12 px-2 flex flex-col items-center">
@@ -46,6 +49,7 @@ const SingleServiceMassageComponent = ({
               <select
                 onChange={(e) => handleSessionChange(Number(e.target.value))}
                 name=""
+                value={session_length}
                 id="session-length"
                 className="bg-white border-2 border-black mx-2"
               >
@@ -64,4 +68,4 @@ const SingleServiceMassageComponent = ({
   );
 };
 
-export default SingleServiceMassageComponent;
+export default TreatmentComponent;

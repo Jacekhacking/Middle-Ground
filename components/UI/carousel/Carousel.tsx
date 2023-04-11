@@ -1,10 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import {
-  ChevronLeftIcon,
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
-  ChevronRightIcon,
 } from "@heroicons/react/24/solid";
 import { AnimatePresence, motion } from "framer-motion";
 import useMeasure from "react-use-measure";
@@ -18,17 +16,17 @@ const Carousel = () => {
   let direction = count > prev ? 1 : -1;
 
   return (
-    <div className="mt-8 flex justify-center w-screen px-8 py-10 ">
+    <div className="h-[45rem] w-[45rem] xl:w-[50rem] xl:h-[50rem] bg-zinc-200 flex items-center justify-center  m-6  ">
       <button
         className="hover:cursor-pointer"
         onClick={() => setCount(count - 1)}
       >
-        <ChevronDoubleLeftIcon className="h-8 w-8 text-black" />
+        <ChevronDoubleLeftIcon className="h-10 w-10 text-black" />
       </button>
 
       <div
         ref={ref}
-        className="flex w-96 h-96 bg-gray-700 text-white items-center justify-center overflow-hidden relative"
+        className="  flex w-full h-full bg-gray-900 border-2 border-zinc-900 rounded-md text-white items-center justify-center overflow-hidden relative"
       >
         <AnimatePresence custom={{ direction, width }}>
           <motion.div
@@ -51,7 +49,7 @@ const Carousel = () => {
       </div>
 
       <button onClick={() => setCount(count + 1)}>
-        <ChevronRightIcon className="h-8 w-8 text-black" />
+        <ChevronDoubleRightIcon className="h-10 w-10 text-black" />
       </button>
     </div>
   );
