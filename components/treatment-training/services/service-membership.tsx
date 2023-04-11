@@ -28,34 +28,39 @@ const ServiceMembershipItem = ({
 
   return (
     <>
-      <h3 className="text-black text-4xl testing test ">Membership Options</h3>
       <div
-        className=" w-full flex justify-center items-center px-7 py-2 text-black"
+        className=" w-full flex justify-center items-start px-7 py-2 gap-4 text-black"
         key={id}
       >
-        <div className="flex flex-col   h-60   items-center justify-between py-4 ">
+        <div className="flex flex-col items-center justify-between h-full gap-6 ">
+          <h2 className="text-black text-3xl testing test font-bold ">
+            Memberships
+          </h2>
           <h3 className="text-6xl font-bold">
             ${cost}
             <span className="text-xl font-light">/ month</span>
           </h3>
           <p className="text-2xl">
-            {sessions_per_month}, {session_length} minute sessions per month
+            {sessions_per_month}x{session_length} minute sessions
           </p>
-          <MGButton thirdPartyLink="https://www.vagaro.com/middleground/memberships">
+          <MGButton
+            size={"small"}
+            thirdPartyLink="https://www.vagaro.com/middleground/memberships"
+          >
             Sign Up
           </MGButton>
         </div>
 
-        <div className="text-black w-5/12 px-2 flex flex-col items-center">
+        <div className="text-black w-5/12 px-2 flex flex-col items-center ">
           <div className=" w-auto flex items-center justify-center ">
-            <form className="bg-white mx-4 flex items-center justify-center my-2 border border-black rounded-md ">
+            <form className="bg-white mx-4 flex items-center justify-center my-2 border border-black drop-shadow-md">
               <label htmlFor="session-length" className="text-center pl-2">
                 Membership Options
               </label>
               <select
                 name=""
                 id="session-length"
-                className="bg-white ml-4  border-l-2 rounded-r-md border-black focus:outline-none focus:ring-2 focus:ring-zinc-900"
+                className="bg-white ml-4  border-l-2  border-black focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
                 value={id}
                 onChange={(e) => handleMemberShipArrayChange(e.target.value)}
               >
@@ -70,7 +75,7 @@ const ServiceMembershipItem = ({
             </form>
           </div>
 
-          <p className="text-center text-lg"> {description}</p>
+          <p className=" text-center leading-6 "> {description}</p>
         </div>
       </div>
       <div className=" w-10/12 min-h-[2px] bg-black my-4 "></div>
