@@ -9,7 +9,7 @@ const socialMediaArray = [
     //img
   },
   {
-    name: "Insta",
+    name: "Facebook",
     //link
     //img
   },
@@ -24,13 +24,23 @@ const NavItems = () => {
             key={title}
             className=" bg-inherit relative flex items-center justify-center h-20  px-10 my-2"
           >
-            <div className="bg-inherit group border border-transparent text-black flex items-center justify-center min-h-10 hover:transition-all ease-in-out  hover:border-black custom-box-shadow-hover  px-6 my-2">
-              <div className="m-4">{title}</div>
+            <div
+              key={title}
+              className="bg-inherit group border border-transparent text-black flex items-center justify-center min-h-10 hover:transition-all ease-in-out  hover:border-black custom-box-shadow-hover  px-6 my-2"
+            >
+              <div key={title} className="m-4">
+                {title}
+              </div>
 
-              <ul className="mt-10 left-50 top-4 absolute hidden group-hover:block border border-black bg-inherit custom-box-shadow-hover transition-all ease-in-out">
+              <ul
+                key={title}
+                className="mt-10 left-50 top-4 absolute hidden group-hover:block border border-black bg-inherit custom-box-shadow-hover transition-all ease-in-out"
+              >
                 {subMenu.map(({ url, title }) => (
-                  <Link href={url} key={title}>
-                    <div className={styles["nav-item"]}>{title} </div>
+                  <Link href={url} key={url}>
+                    <div className={styles["nav-item"]} key={title}>
+                      {title}
+                    </div>
                   </Link>
                 ))}
               </ul>

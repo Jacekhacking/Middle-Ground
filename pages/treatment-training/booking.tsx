@@ -1,12 +1,12 @@
+import { useState } from "react";
 import {
   getFilteredMemberships,
   getFilteredSingleSession,
   getMembershipData,
 } from "../../dummy-data";
-import ServiceMembershipItem from "../../components/treatment-training/services/service-membership";
-import SingleServiceMassageComponent from "../../components/treatment-training/services/single-service-massage";
 
-import { useState } from "react";
+import MembershipComponent from "../../components/treatment-training/booking/memberships";
+import TreatmentComponent from "../../components/treatment-training/booking/treatment";
 
 const Services = () => {
   const [membershipArray, setMembershipArray] = useState(
@@ -39,12 +39,12 @@ const Services = () => {
         Booking Options
       </h2>
       <div className="flex flex-col items-center max-w-6xl">
-        <ServiceMembershipItem
+        <MembershipComponent
           memberships={memberships}
           handleMemberShipArrayChange={handleMemberShipArrayChange}
           membershipsArray={membershipArray}
         />
-        <SingleServiceMassageComponent
+        <TreatmentComponent
           handleSessionChange={handleSessionChange}
           sessionArray={sessionArray}
         />

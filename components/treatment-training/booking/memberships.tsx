@@ -18,7 +18,7 @@ type ServiceMembershipItemProps = {
   handleMemberShipArrayChange: any;
 };
 
-const ServiceMembershipItem = ({
+const MembershipComponent = ({
   memberships,
   membershipsArray,
   handleMemberShipArrayChange,
@@ -34,7 +34,7 @@ const ServiceMembershipItem = ({
       >
         <div className="flex flex-col items-center justify-between h-full gap-6 ">
           <h2 className="text-black text-3xl testing test font-bold ">
-            Memberships
+            Treatment Memberships
           </h2>
           <h3 className="text-6xl font-bold">
             ${cost}
@@ -83,4 +83,4 @@ const ServiceMembershipItem = ({
   );
 };
 
-export default ServiceMembershipItem;
+export default MembershipComponent;
