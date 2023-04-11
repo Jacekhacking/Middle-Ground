@@ -1,6 +1,13 @@
 import { MGButton } from "../../UI/button";
 
 type ServiceMembershipItemProps = {
+  memberships: {
+    id: string;
+    cost: number;
+    sessions_per_month?: number;
+    session_length: number;
+    description: string;
+  }[];
   membershipsArray: {
     id: string;
     cost: number;
@@ -12,6 +19,7 @@ type ServiceMembershipItemProps = {
 };
 
 const ServiceMembershipItem = ({
+  memberships,
   membershipsArray,
   handleMemberShipArrayChange,
 }: ServiceMembershipItemProps) => {
@@ -39,23 +47,25 @@ const ServiceMembershipItem = ({
         </div>
 
         <div className="text-black w-5/12 px-2 flex flex-col items-center">
-          <div className=" w-62 flex items-center justify-center ">
-            <form className="bg-gray-200 mx-4 flex items-center justify-center my-2 ">
-              <label htmlFor="session-length" className="text-center">
-                Session Length
+          <div className=" w-auto flex items-center justify-center ">
+            <form className="bg-white mx-4 flex items-center justify-center my-2 border border-black rounded-md ">
+              <label htmlFor="session-length" className="text-center pl-2">
+                Membership Options
               </label>
               <select
                 name=""
                 id="session-length"
-                className="bg-white border-2 border-gray-500 ml-4 "
-                value={session_length}
-                onChange={(e) =>
-                  handleMemberShipArrayChange(Number(e.target.value))
-                }
+                className="bg-white ml-4  border-l-2 rounded-r-md border-black focus:outline-none focus:ring-2 focus:ring-zinc-900"
+                value={id}
+                onChange={(e) => handleMemberShipArrayChange(e.target.value)}
               >
-                <option value="60">60</option>
-                <option value="90">90</option>
-                <option value="120">120</option>
+                {memberships.map(
+                  ({ id, session_length, sessions_per_month }) => (
+                    <option key={id} value={id}>
+                      {sessions_per_month}x{session_length}
+                    </option>
+                  )
+                )}
               </select>
             </form>
           </div>

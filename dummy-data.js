@@ -1,29 +1,50 @@
 const DUMMY_DATA = [
   {
-    id: "m4x60",
+    id: "60,2",
+    membership: true,
+    session_length: 60,
+    sessions_per_month: 2,
+    cost: 175,
+    description:
+      "This is for the client that likes to receive TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $87.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+  },
+  {
+    id: "90,2",
+    membership: true,
+    session_length: 90,
+    sessions_per_month: 2,
+    cost: 250,
+    description:
+      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $125 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+  },
+  {
+    id: "60,4",
     membership: true,
     session_length: 60,
     sessions_per_month: 4,
-    cost: 220,
-    description: "FILLER description about a 60 minute session for memberships",
+    cost: 320,
+    description:
+      "This is for the client that likes to receive TREATMENT (massage or stretching) 4x PER MONTH or 1x PER WEEK. Each session will be $80 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
   },
   {
-    id: "m4x90",
+    id: "90,4",
     membership: true,
     session_length: 90,
     sessions_per_month: 4,
     cost: 450,
     description:
-      "Fadsf;lkjasdflka asdflkja daskdgjasdgk asd gkdjag das session for memberships",
+      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $112.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
   },
   {
-    id: "m4x1200",
+    id: "120,4",
     membership: true,
     session_length: 120,
     sessions_per_month: 4,
-    cost: 1120,
-    description: "FILLER description about a 60 minute session for memberships",
+    cost: 650,
+    description:
+      "This is for the client that likes to receive 120 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $162.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
   },
+
   {
     id: "60m",
     membership: false,
@@ -54,10 +75,12 @@ export const getSingleSessionData = () => {
   return DUMMY_DATA.filter((data) => data.membership === false);
 };
 
-export const getFilteredMemberships = (sessionLength) => {
+export const getFilteredMemberships = (sessionLength, sessionsPerMonth) => {
   const membershipOptions = getMembershipData();
   return membershipOptions.filter(
-    (data) => data.session_length === sessionLength
+    (data) =>
+      data.session_length === sessionLength &&
+      data.sessions_per_month === sessionsPerMonth
   );
 };
 
