@@ -16,7 +16,7 @@ const Carousel = () => {
   let direction = count > prev ? 1 : -1;
 
   return (
-    <div className="h-[45rem] w-[45rem] xl:w-[50rem] xl:h-[50rem] bg-zinc-200 flex items-center justify-center  m-6  ">
+    <div className=" h-[25rem] w-[25rem] md:w-[40rem] md:h-[40rem]  bg-zinc-200 flex items-center justify-center  m-6 ">
       <button
         className="hover:cursor-pointer"
         onClick={() => setCount(count - 1)}
@@ -26,7 +26,7 @@ const Carousel = () => {
 
       <div
         ref={ref}
-        className="  flex w-full h-full bg-gray-900 border-2 border-zinc-900 rounded-md text-white items-center justify-center overflow-hidden relative"
+        className="  flex  w-full h-full bg-gray-900 border-2 border-zinc-900 rounded-md text-white items-center justify-center overflow-hidden relative"
       >
         <AnimatePresence custom={{ direction, width }}>
           <motion.div
@@ -41,6 +41,9 @@ const Carousel = () => {
             <Image
               src={images[Math.abs(count % 3)]}
               fill={true}
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
               className="object-cover"
               alt="logo"
             />

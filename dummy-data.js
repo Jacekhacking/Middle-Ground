@@ -6,7 +6,7 @@ const DUMMY_DATA = [
     sessions_per_month: 2,
     cost: 175,
     description:
-      "This is for the client that likes to receive TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $87.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+      "This is for the client that likes to receive TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $87.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
   },
   {
     id: "90,2",
@@ -15,7 +15,7 @@ const DUMMY_DATA = [
     sessions_per_month: 2,
     cost: 250,
     description:
-      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $125 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $125 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
   },
   {
     id: "60,4",
@@ -24,7 +24,7 @@ const DUMMY_DATA = [
     sessions_per_month: 4,
     cost: 320,
     description:
-      "This is for the client that likes to receive TREATMENT (massage or stretching) 4x PER MONTH or 1x PER WEEK. Each session will be $80 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+      "This is for the client that likes to receive TREATMENT (massage or stretching) 4x PER MONTH or 1x PER WEEK. Each session will be $80 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
   },
   {
     id: "90,4",
@@ -33,7 +33,7 @@ const DUMMY_DATA = [
     sessions_per_month: 4,
     cost: 450,
     description:
-      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $112.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $112.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
   },
   {
     id: "120,4",
@@ -42,7 +42,7 @@ const DUMMY_DATA = [
     sessions_per_month: 4,
     cost: 650,
     description:
-      "This is for the client that likes to receive 120 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $162.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. *You can rollover up to 2 sessions per year. You can also have a substitute (friend or family member) come in your place up to 2 times per year. Other discounts will not apply to an already discounted Membership account & pricing. You can opt out at anytime*",
+      "This is for the client that likes to receive 120 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $162.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
   },
 
   {

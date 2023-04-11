@@ -23,10 +23,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`hidden md:block top-0 w-full z-10 fixed transition-all ease-in-out text-black h-20 `}
+      className={`hidden lg:block top-0 w-full z-10 fixed transition-all ease-in-out text-[17px] h-20 `}
     >
       <div
-        className={`flex items-center justify-between transition-all ease-in-out text-black px-5 backdrop-blur-sm  ${
+        className={`flex items-center justify-between transition-all ease-in-out  text-black px-5 backdrop-blur-md  ${
           navBackground ? "bg-zinc-300/90" : "bg-zinc-200/90"
         } `}
       >
