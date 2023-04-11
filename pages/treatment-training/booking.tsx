@@ -5,8 +5,9 @@ import {
   getMembershipData,
 } from "../../dummy-data";
 
-import MembershipComponent from "../../components/treatment-training/booking/memberships";
-import TreatmentComponent from "../../components/treatment-training/booking/treatment";
+// import TreatmentComponent from "../../components/treatment-training/booking/treatment";
+import TreatmentComponent from "../../components/treatment-training/booking/Treatment";
+import MembershipComponent from "../../components/treatment-training/booking/Memberships";
 
 const Services = () => {
   const [membershipArray, setMembershipArray] = useState(

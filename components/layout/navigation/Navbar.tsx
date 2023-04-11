@@ -26,22 +26,22 @@ const Navbar = () => {
       className={`hidden md:block top-0 w-full z-10 fixed transition-all ease-in-out text-black h-20 `}
     >
       <div
-        className={`flex items-center justify-between transition-all ease-in-out text-black px-5 ${
-          navBackground ? "bg-zinc-300" : "bg-zinc-200"
+        className={`flex items-center justify-between transition-all ease-in-out text-black px-5 backdrop-blur-sm  ${
+          navBackground ? "bg-zinc-300/90" : "bg-zinc-200/90"
         } `}
       >
-        <div className="w-14 h-14 relative">
+        <div className={`w-14 h-14 relative `}>
           <Link href="/">
             <Image
               src={"/images/navbarLogo.png"}
               fill={true}
               alt="logo"
-              className="absolute"
+              className="absolute bg-transparent"
             />
           </Link>
         </div>
 
-        <MenuItems />
+        <MenuItems navBackground={navBackground} />
       </div>
     </nav>
   );
