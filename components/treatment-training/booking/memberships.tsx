@@ -53,14 +53,17 @@ const MembershipComponent = ({
 
         <div className="text-black w-5/12 px-2 flex flex-col items-center ">
           <div className=" w-auto flex items-center justify-center ">
-            <form className="bg-white mx-4 flex items-center justify-center my-2 border border-black drop-shadow-md">
-              <label htmlFor="session-length" className="text-center pl-2">
+            <form className=" mx-4 flex items-center justify-center my-2  drop-shadow-md">
+              <label
+                htmlFor="session-length"
+                className="text-center  font-bold pl-2"
+              >
                 Membership Options
               </label>
               <select
                 name=""
                 id="session-length"
-                className="bg-white ml-4  border-l-2  border-black focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
+                className="bg-white ml-4 focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
                 value={id}
                 onChange={(e) => handleMemberShipArrayChange(e.target.value)}
               >
