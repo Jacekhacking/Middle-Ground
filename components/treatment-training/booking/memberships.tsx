@@ -1,13 +1,6 @@
 import { MGButton } from "../../UI/button";
 
 type ServiceMembershipItemProps = {
-  memberships: {
-    id: string;
-    cost: number;
-    sessions_per_month?: number;
-    session_length: number;
-    description: string;
-  }[];
   membershipsArray: {
     id: string;
     cost: number;
@@ -19,7 +12,6 @@ type ServiceMembershipItemProps = {
 };
 
 const MembershipComponent = ({
-  memberships,
   membershipsArray,
   handleMemberShipArrayChange,
 }: ServiceMembershipItemProps) => {
@@ -53,28 +45,47 @@ const MembershipComponent = ({
 
         <div className="text-black w-5/12 px-2 flex flex-col items-center ">
           <div className=" w-auto flex items-center justify-center ">
-            <form className=" mx-4 flex items-center justify-center my-2  drop-shadow-md">
-              <label
-                htmlFor="session-length"
-                className="text-center  font-bold pl-2"
-              >
-                Membership Options
-              </label>
-              <select
-                name=""
-                id="session-length"
-                className="bg-white ml-4 focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
-                value={id}
-                onChange={(e) => handleMemberShipArrayChange(e.target.value)}
-              >
-                {memberships.map(
-                  ({ id, session_length, sessions_per_month }) => (
-                    <option key={id} value={id}>
-                      {sessions_per_month}x{session_length}
-                    </option>
-                  )
-                )}
-              </select>
+            <form className=" mx-4 flex flex-col gap-2 items-end justify-center my-2  drop-shadow-md">
+              <div className="flex">
+                <label
+                  htmlFor="session-length"
+                  className="text-center  font-bold pl-2"
+                >
+                  Treatments Per Month
+                </label>
+                <select
+                  id="session-length"
+                  className="bg-white ml-4 focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
+                  value={sessions_per_month}
+                  onChange={(e) =>
+                    handleMemberShipArrayChange("frequency", e.target.value)
+                  }
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div className="flex">
+                <label
+                  htmlFor="frequency"
+                  className="text-center font-bold pl-2"
+                >
+                  Treatment Length
+                </label>
+                <select
+                  className="bg-white ml-4 focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
+                  id="frequency"
+                  value={session_length}
+                  onChange={(e) => {
+                    handleMemberShipArrayChange("length", e.target.value);
+                  }}
+                >
+                  <option value="60">60</option>
+                  <option value="90">90</option>
+                  <option value="120">120</option>
+                </select>
+              </div>
             </form>
           </div>
 

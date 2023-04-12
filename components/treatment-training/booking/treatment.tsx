@@ -1,7 +1,7 @@
 import { MGButton } from "../../UI/button";
 
 type SingleServiceMassageComponent = {
-  sessionArray: {
+  singleSession: {
     id: string;
     cost: number;
     session_length: number;
@@ -11,10 +11,10 @@ type SingleServiceMassageComponent = {
 };
 
 const TreatmentComponent = ({
-  sessionArray,
+  singleSession,
   handleSessionChange,
 }: SingleServiceMassageComponent) => {
-  const { id, cost, session_length, description } = sessionArray[0];
+  const { id, cost, session_length, description } = singleSession[0];
 
   return (
     <>
