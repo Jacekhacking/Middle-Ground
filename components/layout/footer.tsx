@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const Footer = () => {
   return (
-    <footer className={`h-20 w-full bg-zinc-950 `}>
+    <footer className={`h-20 w-full bg-zinc-900 `}>
       <section
         className={`  flex items-center pt-2 justify-evenly border-t-2  border-black`}
       >
