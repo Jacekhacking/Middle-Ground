@@ -5,7 +5,7 @@ import {
 } from "../../dummy-data";
 
 import MembershipComponent from "../../components/treatment-training/booking/Membership";
-import TreatmentComponent from "../../components/treatment-training/booking/Treatment";
+import TreatmentComponent from "../../components/treatment-training/booking/Treatments";
 const Services = () => {
   const [membershipFrequency, setMembershipFrequency] = useState(0);
   const [membershipSessionLength, setMembershipSessionLength] = useState(0);
