@@ -1,4 +1,4 @@
-import { MGButton } from "../../UI/button";
+import { MGButton } from "../../UI/Button";
 
 type ServiceMembershipItemProps = {
   membershipsArray: {
@@ -21,11 +21,11 @@ const MembershipComponent = ({
   return (
     <>
       <div
-        className=" w-full flex justify-center items-start px-7 py-2 gap-4 text-black"
+        className=" w-full flex justify-center items-start px-7 py-2 gap-4 text-zinc-950"
         key={id}
       >
-        <div className="flex flex-col items-center justify-between h-full gap-6 ">
-          <h2 className="text-black text-3xl testing test font-bold ">
+        <div className="flex flex-col items-center justify-between h-full gap-4 ">
+          <h2 className=" text-3xl testing test font-bold ">
             Treatment Memberships
           </h2>
           <h3 className="text-6xl font-bold">
@@ -43,18 +43,18 @@ const MembershipComponent = ({
           </MGButton>
         </div>
 
-        <div className="text-black w-5/12 px-2 flex flex-col items-center ">
+        <div className=" w-5/12 px-2 flex flex-col items-center ">
           <div className=" w-auto flex items-center justify-center ">
-            <form className=" mx-4 flex flex-col gap-2 items-end justify-center my-2  drop-shadow-md">
+            <form className=" flex flex-col gap-2 items-end justify-center my-2  drop-shadow-md">
               <div className="flex">
                 <label
-                  htmlFor="session-length"
+                  htmlFor="membership-session-length"
                   className="text-center  font-bold pl-2"
                 >
                   Treatments Per Month
                 </label>
                 <select
-                  id="session-length"
+                  id="membership-session-length"
                   className="bg-white ml-4 focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
                   value={sessions_per_month}
                   onChange={(e) =>

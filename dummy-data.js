@@ -83,22 +83,33 @@ const DUMMY_DATA = [
     id: "60m",
     membership: false,
     session_length: 60,
-    cost: 1120,
-    description: "FILLER description about a 60 minute session for memberships",
+    cost: 100,
+    description:
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques.",
   },
   {
     id: "90m",
     membership: false,
     session_length: 90,
-    cost: 1120,
-    description: "FILLER description about a 60 minute session for memberships",
+    cost: 150,
+    description:
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques.",
   },
   {
     id: "120m",
     membership: false,
     session_length: 120,
-    cost: 1120,
-    description: "FILLER description about a 60 minute session for memberships",
+    cost: 200,
+    description:
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques.",
+  },
+  {
+    id: "180m",
+    membership: false,
+    session_length: 180,
+    cost: 250,
+    description:
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques. *NOT RECOMMENDED FOR NOVICE CLIENTS*",
   },
 ];
 

@@ -1,5 +1,5 @@
-import MainHeader from "./main-header";
-import Footer from "./footer";
+import MainHeader from "./MainHeader";
+import Footer from "./Footer";
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen">

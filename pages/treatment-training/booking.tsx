@@ -4,9 +4,8 @@ import {
   getFilteredSingleSession,
 } from "../../dummy-data";
 
-import TreatmentComponent from "../../components/treatment-training/booking/treatment";
-import MembershipComponent from "../../components/treatment-training/booking/memberships";
-
+import MembershipComponent from "../../components/treatment-training/booking/Membership";
+import TreatmentComponent from "../../components/treatment-training/booking/Treatment";
 const Services = () => {
   const [membershipFrequency, setMembershipFrequency] = useState(0);
   const [membershipSessionLength, setMembershipSessionLength] = useState(0);
