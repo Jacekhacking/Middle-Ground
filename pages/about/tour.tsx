@@ -2,7 +2,7 @@ import Carousel from "../../components/UI/carousel/Carousel";
 
 const Tour = () => {
   return (
-    <div className="min-h-screen text-center bg-zinc-200 text-zinc-900 flex flex-col items-center justify-center lg:justify-end lg:pt-24 pb-10">
+    <div className="min-h-screen text-center bg-zinc-200 text-zinc-900 flex flex-col items-center justify-center lg:justify-end lg:pt-32 pb-10">
       <h2 className="text-3xl font-bold">TOUR OUR OFFICE!!</h2>
       <p className=" px-4  max-w-3xl text-xl">
         Middle Ground is proudly nestled in the Trolley Healing Hub. We are

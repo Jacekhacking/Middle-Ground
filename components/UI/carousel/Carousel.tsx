@@ -16,17 +16,14 @@ const Carousel = () => {
   let direction = count > prev ? 1 : -1;
 
   return (
-    <div className=" h-[25rem] w-[25rem] md:w-[40rem] md:h-[40rem]  bg-zinc-200 flex items-center justify-center  m-6 ">
-      <button
-        className="hover:cursor-pointer"
-        onClick={() => setCount(count - 1)}
-      >
-        <ChevronDoubleLeftIcon className="h-10 w-10 text-black" />
+    <div className="  h-[20rem] w-screen  sm:h-[25rem] sm:w-[25rem] md:w-[40rem] md:h-[40rem] relative bg-zinc-200 md:flex items-center justify-center  m-6 ">
+      <button onClick={() => setCount(count - 1)}>
+        <ChevronDoubleLeftIcon className="absolute z-10 left-2 sm:-left-12 bottom-0 sm:bottom-1/2  bg-zinc-200 border border-black sm:border-none sm:bg-transparent rounded-lg hover:cursor-pointer h-8 w-12 sm:h-10 sm:w-10 text-zinc-900 hover:bg-zinc-900 hover:text-white sm:hover:bg-transparent sm:hover:text-zinc-900  " />
       </button>
 
       <div
         ref={ref}
-        className="  flex  w-full h-full bg-gray-900 border-2 border-zinc-900 rounded-md text-white items-center justify-center overflow-hidden relative"
+        className="  flex w-full h-full bg-gray-900 border-2 border-zinc-900 sm:rounded-md text-white items-center justify-center overflow-hidden relative"
       >
         <AnimatePresence custom={{ direction, width }}>
           <motion.div
@@ -52,7 +49,7 @@ const Carousel = () => {
       </div>
 
       <button onClick={() => setCount(count + 1)}>
-        <ChevronDoubleRightIcon className="h-10 w-10 text-black" />
+        <ChevronDoubleRightIcon className=" absolute z-10 bottom-0 sm:bottom-1/2 right-2 sm:-right-12 bg-zinc-200  border border-zinc-900 rounded-lg sm:border-none sm:bg-transparent h-8 w-12 sm:h-10 sm:w-10 text-zinc-900 hover:bg-zinc-900 hover:text-white sm:hover:bg-transparent sm:hover:text-zinc-900" />
       </button>
     </div>
   );
