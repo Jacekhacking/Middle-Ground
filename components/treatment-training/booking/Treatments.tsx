@@ -19,11 +19,11 @@ const TreatmentComponent = ({
   return (
     <>
       <div
-        className=" w-full flex justify-center items-center px-7 py-2 text-zinc-950"
+        className=" w-full flex justify-center flex-col md:flex-row items-center px-7 py-2 text-zinc-950"
         key={id}
       >
         <div className="flex flex-col h-60 items-center justify-center gap-4 ">
-          <h2 className=" text-3xl testing test font-bold">
+          <h2 className=" text-3xl text-center test font-bold">
             Single Session Options
           </h2>
           <h3 className="text-6xl font-bold">
@@ -64,7 +64,9 @@ const TreatmentComponent = ({
             </form>
           </div>
 
-          <p className="text-center text-lg">{description}</p>
+          <p className="text-center text-lg w-screen px-10 md:w-full">
+            {description}
+          </p>
         </div>
       </div>
       <div className=" w-10/12 min-h-[2px] bg-black my-4 "></div>

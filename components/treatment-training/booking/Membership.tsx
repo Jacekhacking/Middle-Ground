@@ -25,7 +25,7 @@ const MembershipComponent = ({
         key={id}
       >
         <div className="flex flex-col items-center justify-between h-full gap-4 ">
-          <h2 className=" text-3xl testing test font-bold ">
+          <h2 className=" text-3xl text-center test font-bold ">
             Treatment Memberships
           </h2>
           <h3 className="text-6xl font-bold">

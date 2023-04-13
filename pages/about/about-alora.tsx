@@ -4,7 +4,7 @@ import HeaderTitle from "../../public/images/HeaderTitle.png";
 
 const AboutFounderComponent = () => {
   return (
-    <div className="min-h-screen bg-zinc-200 flex flex-col items-center justify-start font-serif md:py-20">
+    <div className="min-h-screen bg-zinc-200 flex flex-col items-center justify-center font-serif md:py-20 ">
       <div className="flex w-96 h-40  items-center justify-center overflow-hidden relative">
         <Image
           src={HeaderTitle}
@@ -14,16 +14,18 @@ const AboutFounderComponent = () => {
         />
       </div>
 
-      <div className=" bg-zinc-900 rounded-md flex flex-col p-10 max-w-5xl items-center justify-start">
+      <div className=" bg-zinc-200 md:bg-zinc-900 rounded-md gap-6 flex flex-col md:flex-row p-10 max-w-5xl items-center justify-start">
         <Image
           src={AboutImage}
           alt="Alora Bonner"
           className="shadow-2xl rounded-md w-4/5 md:w-1/2 "
         />
-        <div className="flex flex-col items-center">
-          <h2 className="text-zinc-200  text-5xl md:pb-20">Meet Alora</h2>
+        <div className="flex flex-col items-center justify-evenly">
+          <h2 className=" text-zinc-900 md:text-zinc-200  text-5xl md:pb-10">
+            Meet Alora
+          </h2>
 
-          <p className=" text-zinc-200 text-center text-md  md:text-2xl max-w-4xl ">
+          <p className=" text-zinc-900 md:text-zinc-200 text-center leading-7 text-md md:text-xl max-h-96 md:max-w-3xl  overflow-auto ">
             My origin story dates back to my own athletic experience. I grew up
             in Mesquite, NV, attended a small high school where I played
             multiple sports including volleyball, basketball, and softball.
