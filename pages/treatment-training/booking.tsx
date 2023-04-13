@@ -48,10 +48,10 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-200 flex flex-col items-center justify-start pt-10 pb-10 ">
-      <h2 className=" text-black text-5xl font-bold underline py-20 ">
+    <div className="min-h-screen bg-zinc-200 flex flex-col items-center lg:justify-center lg:pt-10 pb-10 ">
+      <h1 className=" text-black text-5xl font-bold underline py-20 ">
         Booking Options
-      </h2>
+      </h1>
       <div className="flex flex-col items-center max-w-6xl">
         <MembershipComponent
           handleMemberShipArrayChange={handleMemberShipArrayChange}
@@ -61,6 +61,10 @@ const Services = () => {
           handleSessionChange={handleSessionChange}
           singleSession={singleSession}
         />
+        <div className="text-zinc-950 flex flex-col gap-2">
+          <h2 className="text-3xl font-bold">Personal Training</h2>- 50$ for a
+          60 minute training session.
+        </div>
       </div>
     </div>
   );
