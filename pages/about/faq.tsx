@@ -1,4 +1,4 @@
-import FaqContainer from "../../components/Faq";
+import FaqContainer from "../../components/FaqContainer";
 
 const faq = () => {
   return (
