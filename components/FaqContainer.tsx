@@ -6,7 +6,6 @@ const FaqContainer = ({ question, answer }) => {
 
   return (
     <div className=" w-full h-80 sm:basis-1/3 md:basis-1/4 flex-grow flex gap-4 items-center justify-center flex-col bg-zinc-200 m-2 md:rounded-md">
-      <h2></h2>
       <motion.div
         className="flex items-center cursor-pointer"
         onClick={() => setToggle(!toggle)}

@@ -1,6 +1,6 @@
 import Hero from "../components/home/Hero";
 import Image from "next/image";
-// import Instagram from "../components/home/Instagram";
+import Instagram from "../components/home/Instagram";
 
 export default function Home() {
   return (
@@ -75,7 +75,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        {/*<Instagram />*/}
+        <Instagram />
       </main>
     </>
   );

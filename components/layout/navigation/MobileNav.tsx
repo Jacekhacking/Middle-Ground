@@ -2,7 +2,6 @@ import { useState } from "react";
 import { NavData } from "./NavData";
 import Link from "next/link";
 import styles from "../../../styles/Navbar.module.css";
-import Image from "next/image";
 
 const MobileNav = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -22,7 +21,7 @@ const MobileNav = () => {
 
       {mobileNav && (
         <>
-          <div className="md:block lg:hidden fixed z-20 w-96 h-screen only: p-4  bg-zinc-600 text-black ">
+          <div className="md:block lg:hidden fixed z-20 w-96 h-screen only: p-4  bg-zinc-600 text-zinc-200 ">
             <div
               className="text-3xl font-thin cursor-pointer w-10 hover:text-zinc-100"
               onClick={() => setMobileNav(false)}
