@@ -2,7 +2,7 @@ import React from "react";
 
 const Booking = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-zinc-200 flex flex-col items-center justify-center">
       <h2 className=" text-black text-5xl font-bold underline ">Booking!</h2>
       <p className="mt-20 text-black text-center text-2xl max-w-5xl">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto

@@ -4,7 +4,8 @@ export const NavData = [
     url: "/treatment-training",
     subMenu: [
       { title: "Book A Session", url: "/treatment-training/booking" },
-      { title: "Services", url: "/treatment-training/services" },
+      { title: "Philosophy", url: "/treatment-training/philosophy" },
+      { title: "Blog", url: "/treatment-training/blog" },
       // { title: "daily exercise", url: "/exercises" },
     ],
   },
