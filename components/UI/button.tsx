@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 type MGButtonPropTypes = {
   children: any;
@@ -7,10 +7,10 @@ type MGButtonPropTypes = {
   size?: string;
 };
 
-export const MGButton = (props: MGButtonPropTypes) => {
+const MGButton = (props: MGButtonPropTypes) => {
   const { children, link, thirdPartyLink, size } = props;
 
-  if (thirdPartyLink && size === "small") {
+  if (thirdPartyLink && size === 'small') {
     return (
       <a href={`${thirdPartyLink}`} target="_blank" rel="noopener noreferrer">
         <button className=" custom-box-shadow  bg-zinc-100 text-black  w-20 h-8 hover:bg-black hover:text-zinc-100">
@@ -19,7 +19,7 @@ export const MGButton = (props: MGButtonPropTypes) => {
       </a>
     );
   }
-  if (size === "small") {
+  if (size === 'small') {
     return (
       <button className=" custom-box-shadow text-xl bg-zinc-100 text-black  w-20 h-12 hover:bg-black hover:text-zinc-100">
         {children}
@@ -55,10 +55,4 @@ export const MGButton = (props: MGButtonPropTypes) => {
   );
 };
 
-export const FormSubmitButton = ({ children }: any) => {
-  return (
-    <button className=" text-base bg-zinc-100 border border-black text-black  w-24 h-ful hover:bg-black hover:text-zinc-100">
-      {children}
-    </button>
-  );
-};
+export default MGButton;

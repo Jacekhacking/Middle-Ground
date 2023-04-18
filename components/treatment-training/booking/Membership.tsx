@@ -1,4 +1,4 @@
-import { MGButton } from '../../UI/Button';
+import MGButton from '../../UI/Button';
 
 type ServiceMembershipItemProps = {
   membershipsArray: {
