@@ -32,12 +32,15 @@ const TreatmentComponent = ({
           </h3>
           <p className="text-2xl">{session_length} minute sessions</p>
 
-          <MGButton
-            size={'small'}
-            thirdPartyLink="https://www.vagaro.com/middleground/services"
+          <a
+            href={`https://www.vagaro.com/middleground/services`}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Sign Up
-          </MGButton>
+            <button className=" custom-box-shadow  bg-zinc-100 text-black  w-20 h-8 hover:bg-black hover:text-zinc-100">
+              Sign Up
+            </button>
+          </a>
         </div>
 
         <div className=" w-5/12 px-2 flex flex-col items-center">

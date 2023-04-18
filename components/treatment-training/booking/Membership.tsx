@@ -1,5 +1,3 @@
-import MGButton from '../../UI/Button';
-
 type ServiceMembershipItemProps = {
   membershipsArray: {
     id: string;
@@ -85,12 +83,16 @@ const MembershipComponent = ({
             </div>
 
             <p className=" text-center leading-6 "> {description}</p>
-            <MGButton
-              size={'small'}
-              thirdPartyLink="https://www.vagaro.com/middleground/memberships"
+
+            <a
+              href={`https://www.vagaro.com/middleground/memberships`}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Sign Up
-            </MGButton>
+              <button className=" custom-box-shadow  bg-zinc-100 text-black  w-20 h-8 hover:bg-black hover:text-zinc-100">
+                Sign Up
+              </button>
+            </a>
           </div>
         </div>
       </div>
