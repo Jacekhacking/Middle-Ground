@@ -1,12 +1,16 @@
 // import "../components/styles/globals.css";
-import Layout from "../components/layout/PageLayout";
+// import Layout from "../components/layout/PageLayout";
+import Footer from "../components/layout/Footer";
+import MainHeader from "../components/layout/MainHeader";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <div className="min-h-screen">
+      <MainHeader />
       <Component {...pageProps} />
-    </Layout>
+      <Footer />
+    </div>
   );
 }
 

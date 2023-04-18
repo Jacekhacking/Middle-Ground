@@ -39,8 +39,8 @@ const MobileNav = () => {
                     <>
                       {subMenu.map(({ url, title }) => (
                         <Link
-                          href={url}
                           key={title}
+                          href={url}
                           onClick={() => setMobileNav(false)}
                         >
                           <div className={`${styles["nav-item"]} text-center`}>
