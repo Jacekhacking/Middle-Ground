@@ -14,8 +14,7 @@ const DUMMY_DATA = [
     session_length: 60,
     sessions_per_month: 2,
     cost: 175,
-    description:
-      "This is for the client that likes to receive TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $87.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
+    description: "This is for the client that likes to receive TREATMENt ",
   },
   {
     id: "60,4",
@@ -23,8 +22,7 @@ const DUMMY_DATA = [
     session_length: 60,
     sessions_per_month: 4,
     cost: 320,
-    description:
-      "This is for the client that likes to receive TREATMENT (massage or stretching) 4x PER MONTH or 1x PER WEEK. Each session will be $80 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
+    description: "This is for the client that likes to receive TREATMENT. ",
   },
   {
     id: "90,1",
@@ -41,7 +39,7 @@ const DUMMY_DATA = [
     sessions_per_month: 2,
     cost: 250,
     description:
-      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 2x PER MONTH. Each session will be $125 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
+      "This is for the client that likes to receive 90 MIN TREATMENT",
   },
   {
     id: "90,4",
@@ -50,7 +48,7 @@ const DUMMY_DATA = [
     sessions_per_month: 4,
     cost: 450,
     description:
-      "This is for the client that likes to receive 90 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $112.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
+      "This is for the client that likes to receive 90 MIN TREATMENT ",
   },
   {
     id: "120,1",
@@ -76,7 +74,7 @@ const DUMMY_DATA = [
     sessions_per_month: 4,
     cost: 650,
     description:
-      "This is for the client that likes to receive 120 MIN TREATMENT (massage or stretching) 4x PER MONTH. Each session will be $162.50 on this plan. Lock in your treatment dates up to 3 months in advance to receive this discounted rate. ",
+      "This is for the client that likes to receive 120 MIN TREATMENT  ",
   },
 
   {
@@ -85,7 +83,7 @@ const DUMMY_DATA = [
     session_length: 60,
     cost: 100,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques.",
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.",
   },
   {
     id: "90m",
@@ -93,7 +91,7 @@ const DUMMY_DATA = [
     session_length: 90,
     cost: 150,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques.",
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.",
   },
   {
     id: "120m",
@@ -101,7 +99,7 @@ const DUMMY_DATA = [
     session_length: 120,
     cost: 200,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques.",
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.",
   },
   {
     id: "180m",
@@ -109,7 +107,7 @@ const DUMMY_DATA = [
     session_length: 180,
     cost: 250,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. Therapeutic Massage is productive bodywork that relaxes & improves tissue quality by using deep tissue, active release, and myofascial techniques. Assisted Stretching helps to improve range of motion & promote healthy joints by using PNF stretching & FRC training techniques. *NOT RECOMMENDED FOR NOVICE CLIENTS*",
+      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. ",
   },
 ];
 
