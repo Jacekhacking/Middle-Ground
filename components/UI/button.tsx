@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 type MGButtonPropTypes = {
-  children: any;
+  children: string | JSX.Element | JSX.Element[];
   link?: string;
   thirdPartyLink?: string;
   size?: string;
