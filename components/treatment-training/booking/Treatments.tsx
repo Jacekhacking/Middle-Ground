@@ -1,4 +1,4 @@
-import { MGButton } from "../../UI/Button";
+import { MGButton } from '../../UI/Button';
 
 type SingleServiceMassageComponent = {
   singleSession: {
@@ -33,7 +33,7 @@ const TreatmentComponent = ({
           <p className="text-2xl">{session_length} minute sessions</p>
 
           <MGButton
-            size={"small"}
+            size={'small'}
             thirdPartyLink="https://www.vagaro.com/middleground/services"
           >
             Sign Up

@@ -1,4 +1,4 @@
-import { MGButton } from "../../UI/Button";
+import { MGButton } from '../../UI/Button';
 
 type ServiceMembershipItemProps = {
   membershipsArray: {
@@ -53,7 +53,7 @@ const MembershipComponent = ({
                     className="bg-white ml-4 focus:outline-none focus:ring-2 focus:ring-zinc-900 cursor-pointer"
                     value={sessions_per_month}
                     onChange={(e) =>
-                      handleMemberShipArrayChange("frequency", e.target.value)
+                      handleMemberShipArrayChange('frequency', e.target.value)
                     }
                   >
                     <option value="1">1</option>
@@ -73,7 +73,7 @@ const MembershipComponent = ({
                     id="frequency"
                     value={session_length}
                     onChange={(e) => {
-                      handleMemberShipArrayChange("length", e.target.value);
+                      handleMemberShipArrayChange('length', e.target.value);
                     }}
                   >
                     <option value="60">60</option>
@@ -86,7 +86,7 @@ const MembershipComponent = ({
 
             <p className=" text-center leading-6 "> {description}</p>
             <MGButton
-              size={"small"}
+              size={'small'}
               thirdPartyLink="https://www.vagaro.com/middleground/memberships"
             >
               Sign Up
