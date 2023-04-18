@@ -5,15 +5,18 @@ const FaqContainer = ({ question, answer }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className=" w-full h-80 sm:basis-1/3 md:basis-1/4 flex-grow flex gap-4 items-center justify-center flex-col bg-zinc-200 m-2 md:rounded-md">
-      <h2></h2>
+    <div className=" w-full h-80 sm:basis-1/2 md:basis-1/3 flex-grow flex gap-4 items-center justify-center flex-col bg-zinc-200 m-6 rounded-2xl">
       <motion.div
-        className="flex items-center cursor-pointer"
-        onClick={() => setToggle(!toggle)}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ overflow: "hidden" }}
       >
-        <ChevronDoubleRightIcon className="h-6 w-6" /> {question}
+        <div
+          className="flex items-center justify-center cursor-pointer text-2xl bg-zinc-900 text-zinc-200 h-10 px-4 uppercase"
+          onClick={() => setToggle(!toggle)}
+        >
+          {question}
+        </div>
+        <div className="text-center pt-4">filler</div>
       </motion.div>
       <AnimatePresence initial={false}>
         {toggle && (

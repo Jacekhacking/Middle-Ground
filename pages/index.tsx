@@ -1,6 +1,7 @@
 import Hero from "../components/home/Hero";
 import Image from "next/image";
-// import Instagram from "../components/home/Instagram";
+import Instagram from "../components/home/Instagram";
+import AboutAloraComponent from "../components/about/AboutAloraComponent";
 
 export default function Home() {
   return (
@@ -75,8 +76,15 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        {/*<Instagram />*/}
+        <section className="flex items-center justify-center bg-zinc-900">
+          <AboutAloraComponent bioParagraph={homePageBio} />
+        </section>
+        <Instagram />
       </main>
     </>
   );
 }
+
+const homePageBio = `B.S. Exercise Science, LMT, CSCS
+Alora Bonner is the owner of Middle Ground - Treatment & Training. She is a Licensed Massage Therapist & Personal Trainer. She earned her Bachelor's Degree in Exercise Science from SUU, where she also worked as an Athletic Trainer.  Her passions range from team sports, to river guiding, to hot yoga, and to helping people feel confident in their moving bodies. Currently, she is seeing clients for bodywork, mobility & strength training. She is also teaching classes at Myotherapy College of Massage, and is very involved in advancing the field of massage therapy.  "My goal is to help people find their middle ground, whatever that looks like for them."
+`;

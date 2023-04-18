@@ -1,4 +1,3 @@
-import styles from "../../styles/Header.module.css";
 import HeaderTitle from "../../public/images/HeaderTitle.png";
 import Header from "../../public/images/Header-bg.png";
 import Image from "next/image";
