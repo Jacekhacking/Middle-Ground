@@ -1,4 +1,4 @@
-import FaqContainer from "../../components/FaqContainer";
+import FaqContainer from '../../components/FaqContainer';
 
 const faq = () => {
   return (
@@ -8,7 +8,7 @@ const faq = () => {
       </h2>
       <div className="flex h-auto flex-wrap items-center justify-between  bg-zinc-900 container max-w-6xl md:rounded-md">
         {faqQuestions.map(({ question, answer }) => (
-          <FaqContainer question={question} answer={answer} />
+          <FaqContainer key={question} question={question} answer={answer} />
         ))}
       </div>
     </div>
@@ -19,48 +19,48 @@ export default faq;
 
 const faqQuestions = [
   {
-    question: "Question 1",
+    question: 'Question 1',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question2",
+    question: 'Question2',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
   {
-    question: "Question3",
+    question: 'Question3',
     answer:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?",
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis dignissimos tempore, consectetur autem provident officiavoluptatum reprehenderit ut explicabo, perferendis error rem sequi?Sed porro adipisci ab quas et?',
   },
 ];
