@@ -1,5 +1,3 @@
-import MGButton from '../../UI/Button';
-
 type SingleServiceMassageComponent = {
   singleSession: {
     id: string;
