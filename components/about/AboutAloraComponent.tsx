@@ -1,10 +1,10 @@
-import Image from "next/image";
-import AboutImage from "/public/images/welcome-page-tiny 2.jpg";
+import Image from 'next/image';
+import AboutImage from '/public/images/welcome-page-tiny 2.jpg';
 
 const AboutAloraComponent = ({ bioParagraph }) => {
   return (
     <>
-      <div className=" bg-zinc-200 md:bg-zinc-900 rounded-md gap-6 flex flex-col md:flex-row p-10 max-w-5xl items-center justify-start">
+      <div className=" bg-zinc-200 md:bg-zinc-900 md:rounded-md gap-6 flex flex-col md:flex-row p-10 max-w-5xl items-center justify-start">
         <Image
           src={AboutImage}
           alt="Alora Bonner"

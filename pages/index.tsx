@@ -1,14 +1,13 @@
-import Hero from "../components/home/Hero";
-import Image from "next/image";
-import Instagram from "../components/home/Instagram";
-import AboutAloraComponent from "../components/about/AboutAloraComponent";
+import Hero from '../components/home/Hero';
+import Image from 'next/image';
+import Instagram from '../components/home/Instagram';
+import AboutAloraComponent from '../components/about/AboutAloraComponent';
 
 export default function Home() {
   return (
     <>
       <main>
         <Hero />
-        {/* <section className="grid grid-cols-4 grid-rows-4 gap-2 max-2xl:"> */}
         <section className=" py-20 md:py-32 flex flex-col md:flex-row items-center justify-center gap-2 m-10 ">
           <h2 className=" py-10 text-center text-3xl flex items-center justify-center  md:text-5xl ">
             FIND YOUR MIDDLE GROUND
@@ -24,9 +23,9 @@ export default function Home() {
         <section
           className={`min-h-[75vh] relative mb-28 grid grid-cols-7 grid-rows-7`}
         >
-          <div className=" bg-contain bg-center  relative col-start-4 col-end-7 row-start-1 row-end-4">
+          <div className="bg-contain bg-center relative col-start-2 md:col-start-4 col-end-7 row-start-1 row-end-3 md:row-end-4">
             <Image
-              src={"/images/welcome-page-overlap2.jpg"}
+              src={'/images/welcome-page-overlap2.jpg'}
               fill={true}
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
@@ -36,9 +35,9 @@ export default function Home() {
             ></Image>
           </div>
 
-          <div className=" bg-contain bg-center -z-10 relative col-start-2 col-end-5 row-start-3 row-end-6">
+          <div className=" bg-contain bg-center -z-10 relative col-start-2 col-end-7 md:col-end-5 row-start-4 md:row-start-3 row-end-6">
             <Image
-              src={"/images/welcome-page-overlap1.jpg"}
+              src={'/images/welcome-page-overlap1.jpg'}
               fill={true}
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
