@@ -17,7 +17,7 @@ const TreatmentComponent = ({
   return (
     <>
       <div
-        className=" w-full flex justify-center flex-col md:flex-row items-center px-7 py-2 text-zinc-950"
+        className=" w-full flex justify-center flex-col md:flex-row items-center py-2 text-zinc-950"
         key={id}
       >
         <div className="flex flex-col h-60 items-center justify-center gap-4 ">
@@ -42,7 +42,7 @@ const TreatmentComponent = ({
         </div>
 
         <div className=" w-5/12 px-2 flex flex-col items-center">
-          <div className=" w-62 flex items-center justify-center ">
+          <div className=" flex items-center justify-center ">
             <form className="my-2 flex gap-2 items-end justify-center drop-shadow-md">
               <label
                 htmlFor="session-length"
@@ -65,9 +65,7 @@ const TreatmentComponent = ({
             </form>
           </div>
 
-          <p className="text-center text-lg w-screen px-10 md:w-full">
-            {description}
-          </p>
+          <p className="text-center text-lg w-60 md:w-full">{description}</p>
         </div>
       </div>
       <div className=" w-10/12 min-h-[2px] bg-black my-4 "></div>

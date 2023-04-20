@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   getFilteredMemberships,
   getFilteredSingleSession,
-} from "../../dummy-data";
+} from '../../dummy-data';
 
-import MembershipComponent from "../../components/treatment-training/booking/Membership";
-import TreatmentComponent from "../../components/treatment-training/booking/Treatments";
+import MembershipComponent from '../../components/treatment-training/booking/Membership';
+import TreatmentComponent from '../../components/treatment-training/booking/Treatments';
 const Services = () => {
   const [membershipFrequency, setMembershipFrequency] = useState(0);
   const [membershipSessionLength, setMembershipSessionLength] = useState(0);
@@ -18,7 +18,7 @@ const Services = () => {
   );
 
   const handleMemberShipArrayChange = (message, data) => {
-    if (message === "frequency") {
+    if (message === 'frequency') {
       setMembershipFrequency(Number(data));
       const filteredArray = getFilteredMemberships(
         membershipSessionLength > 0 ? membershipSessionLength : 60,
@@ -28,7 +28,7 @@ const Services = () => {
       setMembershipArray(filteredArray);
       return;
     }
-    if (message === "length") {
+    if (message === 'length') {
       setMembershipSessionLength(Number(data));
       const filteredArray = getFilteredMemberships(
         Number(data),
@@ -38,7 +38,7 @@ const Services = () => {
       setMembershipArray(filteredArray);
       return;
     } else {
-      console.log("error wrong data passed");
+      console.log('error wrong data passed');
     }
   };
 
@@ -49,10 +49,10 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-zinc-200 flex flex-col items-center lg:justify-center lg:pt-10 pb-10 ">
-      <h1 className=" text-black text-5xl font-bold underline py-20 ">
+      <h1 className=" text-black text-center text-3xl md:text-5xl font-bold underline py-20 ">
         Booking Options
       </h1>
-      <div className="flex flex-col items-center max-w-6xl">
+      <div className="flex flex-col items-center max-w-4xl">
         <MembershipComponent
           handleMemberShipArrayChange={handleMemberShipArrayChange}
           membershipsArray={membershipArray}
