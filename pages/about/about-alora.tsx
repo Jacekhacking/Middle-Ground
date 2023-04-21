@@ -1,10 +1,10 @@
-import AboutAloraComponent from "../../components/about/AboutAloraComponent";
-import Image from "next/image";
-import HeaderTitle from "/public/images/HeaderTitle.png";
+import AboutAloraComponent from '../../components/about/AboutAloraComponent';
+import Image from 'next/image';
+import HeaderTitle from '/public/images/HeaderTitle.png';
 
 const AboutFounderComponent = () => {
   return (
-    <div className="min-h-screen bg-zinc-200 flex flex-col items-center justify-center font-serif md:py-20 ">
+    <div className="min-h-screen bg-zinc-200 flex flex-col items-center justify-center  md:py-20 ">
       <div className="flex w-96 h-40  items-center justify-center overflow-hidden relative">
         <Image
           src={HeaderTitle}
