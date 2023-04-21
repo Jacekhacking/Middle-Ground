@@ -1,113 +1,118 @@
 const DUMMY_DATA = [
   {
-    id: "60,1",
+    id: '60,1',
     membership: true,
     session_length: 60,
     sessions_per_month: 1,
     cost: 85,
     description:
-      "(1) Treatment Session PER Month Treatment Session includes: Massage Therapy & Assisted Stretching.",
+      '60 MIN TREATMENT SESSION - 1 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "60,2",
+    id: '60,2',
     membership: true,
     session_length: 60,
     sessions_per_month: 2,
     cost: 175,
-    description: "This is for the client that likes to receive TREATMENt ",
+    description:
+      '60 MIN TREATMENT SESSION - 2 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "60,4",
+    id: '60,4',
     membership: true,
     session_length: 60,
     sessions_per_month: 4,
     cost: 320,
-    description: "This is for the client that likes to receive TREATMENT. ",
+    description:
+      '60 MIN TREATMENT SESSION - 4 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "90,1",
+    id: '90,1',
     membership: true,
     session_length: 90,
     sessions_per_month: 1,
     cost: 130,
-    description: "90 minute treatment session 1X per month filler description",
+    description:
+      '90 MIN TREATMENT SESSION - 1 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "90,2",
+    id: '90,2',
     membership: true,
     session_length: 90,
     sessions_per_month: 2,
     cost: 250,
     description:
-      "This is for the client that likes to receive 90 MIN TREATMENT",
+      '90 MIN TREATMENT SESSION - 2 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "90,4",
+    id: '90,4',
     membership: true,
     session_length: 90,
     sessions_per_month: 4,
     cost: 450,
     description:
-      "This is for the client that likes to receive 90 MIN TREATMENT ",
+      '90 MIN TREATMENT SESSION - 4 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "120,1",
+    id: '120,1',
     membership: true,
     session_length: 120,
     sessions_per_month: 1,
     cost: 170,
-    description: "2 hour massage once a month filler description",
+    description:
+      '120 MIN TREATMENT SESSION - 1 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
   {
-    id: "120,2",
+    id: '120,2',
     membership: true,
     session_length: 120,
     sessions_per_month: 2,
-    cost: 240,
-    description: "2 hour massage 2X per month filler description",
+    cost: 300,
+    description:
+      '120 MIN TREATMENT SESSION for Massage Therapy & Assisted Stretching 2 X PER MONTH.',
   },
 
   {
-    id: "120,4",
+    id: '120,4',
     membership: true,
     session_length: 120,
     sessions_per_month: 4,
     cost: 650,
     description:
-      "This is for the client that likes to receive 120 MIN TREATMENT  ",
+      '120 MIN TREATMENT SESSION - 4 X PER MONTH. for Massage Therapy & Assisted Stretching',
   },
 
   {
-    id: "60m",
+    id: '60m',
     membership: false,
     session_length: 60,
     cost: 100,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.",
+      'Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.',
   },
   {
-    id: "90m",
+    id: '90m',
     membership: false,
     session_length: 90,
     cost: 150,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.",
+      'Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.',
   },
   {
-    id: "120m",
+    id: '120m',
     membership: false,
     session_length: 120,
     cost: 200,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.",
+      'Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs.',
   },
   {
-    id: "180m",
+    id: '180m',
     membership: false,
     session_length: 180,
     cost: 250,
     description:
-      "Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. ",
+      'Treatment includes: Therapeutic Massage & Assisted Stretching customized to your needs. (NOT RECOMMENDED FOR NEW CLIENTS) ',
   },
 ];
 
