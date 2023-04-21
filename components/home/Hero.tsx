@@ -1,6 +1,6 @@
-import HeaderTitle from "../../public/images/HeaderTitle.png";
-import Header from "../../public/images/Header-bg.png";
-import Image from "next/image";
+import HeaderTitle from '../../public/images/HeaderTitle.png';
+import Header from '../../public/images/Header-bg.png';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -25,9 +25,15 @@ const Hero = () => {
           priority
         />
       </div>
-      <button className=" custom-box-shadow text-xl bg-white text-black absolute bottom-14 right-12 w-32 h-12 hover:bg-black hover:text-white">
-        Book Now
-      </button>
+      <a
+        href={`https://www.vagaro.com/middleground/`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className=" custom-box-shadow text-xl bg-white text-black absolute bottom-14 right-12 w-32 h-12 hover:bg-black hover:text-white">
+          Book Now
+        </button>
+      </a>
     </header>
   );
 };
