@@ -57,7 +57,7 @@ export default function Home() {
             client. Depending on where you are along the spectrum of treatment &
             training. Book a treatment or a training session.
           </p>
-          <div className="  inline-flex text-center items-start">
+          <div className="  inline-flex text-center gap-8 items-start">
             <ul className="text-2xl">
               <h3 className="text-3xl pb-4">TREATMENT</h3>
               <li>Massage Therapy</li>

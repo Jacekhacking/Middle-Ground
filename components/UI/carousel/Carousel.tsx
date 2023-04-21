@@ -1,11 +1,11 @@
-import { useState } from "react";
-import Image from "next/image";
+import { useState } from 'react';
+import Image from 'next/image';
 import {
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
-} from "@heroicons/react/24/solid";
-import { AnimatePresence, motion } from "framer-motion";
-import useMeasure from "react-use-measure";
+} from '@heroicons/react/24/solid';
+import { AnimatePresence, motion } from 'framer-motion';
+import useMeasure from 'react-use-measure';
 
 const Carousel = () => {
   const [count, setCount] = useState(1);
@@ -64,9 +64,11 @@ const variants = {
 };
 
 const images = [
-  "/images/Header2.PNG",
-  "/images/welcome-page-overlap2.jpg",
-  "/images/welcome-page-overlap1.jpg",
+  '/images/mg-tour-1.png',
+  '/images/mg-tour-2.png',
+  '/images/mg-tour-3.png',
+  '/images/mg-tour-4.png',
+  '/images/mg-tour-5.png',
 ];
 
 function usePrevious(state) {
