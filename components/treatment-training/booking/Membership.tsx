@@ -38,8 +38,8 @@ const MembershipComponent = ({
               </p>
             </div>
 
-            <div className=" w-5/12 px-2 flex flex-col items-center ">
-              <div className=" w-auto flex items-center justify-between ">
+            <div className=" w-5/12  flex flex-col items-center ">
+              <div className=" flex items-center justify-between ">
                 <form className=" w-96 md:w-auto flex flex-col gap-2 items-center md:items-end justify-center my-2  drop-shadow-md">
                   <div className="flex">
                     <label

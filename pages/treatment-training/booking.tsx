@@ -52,7 +52,7 @@ const Services = () => {
       <h1 className=" text-black text-center text-3xl md:text-5xl font-bold underline py-20 ">
         Booking Options
       </h1>
-      <div className="flex flex-col items-center max-w-4xl">
+      <div className="flex flex-col items-center w-screen">
         <MembershipComponent
           handleMemberShipArrayChange={handleMemberShipArrayChange}
           membershipsArray={membershipArray}
@@ -61,9 +61,19 @@ const Services = () => {
           handleSessionChange={handleSessionChange}
           singleSession={singleSession}
         />
-        <div className="text-zinc-950 flex flex-col gap-2">
-          <h2 className="text-3xl font-bold">Personal Training</h2>- 50$ for a
-          60 minute training session.
+        <div className="text-zinc-950 flex flex-col items-center gap-2 text-center w-screen flex-wrap">
+          <h2 className="text-3xl font-bold text-center">Personal Training</h2>
+          <p className="leading-5 max-w-sm h-auto">
+            1 FREE CONSULT: Receive TRAINING advice & structured programming
+            from a Certified Strength & Conditioning Specialist (CSCS) to
+            address specific training goals. Your first consultation will be
+            conducted virtually or informally as an add-on to a previously
+            booked session. We will (1) discuss your specific health & fitness
+            goals (2) create a training program that will help you achieve your
+            goals (3) answer any questions you might have.
+          </p>
+          <h3 className="font-bold text-2xl ">After Consult </h3>
+          <p className="text-xl">50$ for a 60 minute training session.</p>
         </div>
       </div>
     </div>
